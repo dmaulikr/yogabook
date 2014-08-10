@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF631D04197E8E6300AB6D17 /* NewSequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF631D03197E8E6300AB6D17 /* NewSequenceViewController.swift */; };
+		BF0ED232199712550065F633 /* pose_change_bell.aif in Resources */ = {isa = PBXBuildFile; fileRef = BF0ED231199712550065F633 /* pose_change_bell.aif */; };
+		BF0ED23419971EBC0065F633 /* finished_sequence.aif in Resources */ = {isa = PBXBuildFile; fileRef = BF0ED23319971EBC0065F633 /* finished_sequence.aif */; };
+		BF0ED23619972FD10065F633 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0ED23519972FD10065F633 /* Utils.swift */; };
+		BF3B6B971996252500860779 /* PlaySequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3B6B961996252500860779 /* PlaySequenceViewController.swift */; };
+		BF3B6B9C1996644700860779 /* tickA.aif in Resources */ = {isa = PBXBuildFile; fileRef = BF3B6B9A1996644700860779 /* tickA.aif */; };
+		BF3B6B9D1996644700860779 /* tickB.aif in Resources */ = {isa = PBXBuildFile; fileRef = BF3B6B9B1996644700860779 /* tickB.aif */; };
+		BF631D04197E8E6300AB6D17 /* BuildSequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF631D03197E8E6300AB6D17 /* BuildSequenceViewController.swift */; };
 		BF858D9D197A6083002CEBB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF858D9C197A6083002CEBB0 /* AppDelegate.swift */; };
 		BF858D9F197A6083002CEBB0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF858D9E197A6083002CEBB0 /* MainViewController.swift */; };
 		BF858DA2197A6083002CEBB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF858DA0197A6083002CEBB0 /* Main.storyboard */; };
 		BF858DA4197A6083002CEBB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF858DA3197A6083002CEBB0 /* Images.xcassets */; };
 		BF858DB0197A6083002CEBB0 /* yogabookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF858DAF197A6083002CEBB0 /* yogabookTests.swift */; };
-		BF858DBA197A6D83002CEBB0 /* MainUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF858DB9197A6D83002CEBB0 /* MainUICollectionViewCell.swift */; };
+		BF858DBA197A6D83002CEBB0 /* YogaSequenceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF858DB9197A6D83002CEBB0 /* YogaSequenceViewCell.swift */; };
 		BF858DBC197A7533002CEBB0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF858DBB197A7533002CEBB0 /* Models.swift */; };
 		BF858DBE197A774F002CEBB0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF858DBD197A774E002CEBB0 /* Data.swift */; };
+		BF88A1B5198CABDE00A13823 /* poses.json in Resources */ = {isa = PBXBuildFile; fileRef = BF88A1B4198CABDE00A13823 /* poses.json */; };
+		BF88A1B7198D0DC500A13823 /* Poses.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF88A1B6198D0DC500A13823 /* Poses.xcassets */; };
+		BF88A1BA198D105500A13823 /* PoseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88A1B9198D105500A13823 /* PoseViewCell.swift */; };
+		BF88A1BC198DD30600A13823 /* PoseSequenceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88A1BB198DD30600A13823 /* PoseSequenceViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF631D03197E8E6300AB6D17 /* NewSequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSequenceViewController.swift; sourceTree = "<group>"; };
+		BF0ED231199712550065F633 /* pose_change_bell.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = pose_change_bell.aif; sourceTree = "<group>"; };
+		BF0ED23319971EBC0065F633 /* finished_sequence.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = finished_sequence.aif; sourceTree = "<group>"; };
+		BF0ED23519972FD10065F633 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BF3B6B961996252500860779 /* PlaySequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySequenceViewController.swift; sourceTree = "<group>"; };
+		BF3B6B9A1996644700860779 /* tickA.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tickA.aif; sourceTree = "<group>"; };
+		BF3B6B9B1996644700860779 /* tickB.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tickB.aif; sourceTree = "<group>"; };
+		BF631D03197E8E6300AB6D17 /* BuildSequenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildSequenceViewController.swift; sourceTree = "<group>"; };
 		BF858D97197A6083002CEBB0 /* yogabook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yogabook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF858D9B197A6083002CEBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF858D9C197A6083002CEBB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +55,13 @@
 		BF858DA9197A6083002CEBB0 /* yogabookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yogabookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF858DAE197A6083002CEBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF858DAF197A6083002CEBB0 /* yogabookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yogabookTests.swift; sourceTree = "<group>"; };
-		BF858DB9197A6D83002CEBB0 /* MainUICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUICollectionViewCell.swift; sourceTree = "<group>"; };
+		BF858DB9197A6D83002CEBB0 /* YogaSequenceViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YogaSequenceViewCell.swift; sourceTree = "<group>"; };
 		BF858DBB197A7533002CEBB0 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		BF858DBD197A774E002CEBB0 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		BF88A1B4198CABDE00A13823 /* poses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = poses.json; sourceTree = "<group>"; };
+		BF88A1B6198D0DC500A13823 /* Poses.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Poses.xcassets; sourceTree = "<group>"; };
+		BF88A1B9198D105500A13823 /* PoseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseViewCell.swift; sourceTree = "<group>"; };
+		BF88A1BB198DD30600A13823 /* PoseSequenceViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseSequenceViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +82,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF3B6B9E1996644E00860779 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BF0ED23319971EBC0065F633 /* finished_sequence.aif */,
+				BF0ED231199712550065F633 /* pose_change_bell.aif */,
+				BF3B6B9A1996644700860779 /* tickA.aif */,
+				BF3B6B9B1996644700860779 /* tickB.aif */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		BF858D8E197A6083002CEBB0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,13 +116,16 @@
 			children = (
 				BF858D9C197A6083002CEBB0 /* AppDelegate.swift */,
 				BF858D9E197A6083002CEBB0 /* MainViewController.swift */,
-				BF631D03197E8E6300AB6D17 /* NewSequenceViewController.swift */,
+				BF631D03197E8E6300AB6D17 /* BuildSequenceViewController.swift */,
+				BF3B6B961996252500860779 /* PlaySequenceViewController.swift */,
+				BF88A1B8198D101300A13823 /* Cells */,
 				BF858DA0197A6083002CEBB0 /* Main.storyboard */,
+				BF88A1B6198D0DC500A13823 /* Poses.xcassets */,
 				BF858DA3197A6083002CEBB0 /* Images.xcassets */,
 				BF858D9A197A6083002CEBB0 /* Supporting Files */,
-				BF858DB9197A6D83002CEBB0 /* MainUICollectionViewCell.swift */,
 				BF858DBB197A7533002CEBB0 /* Models.swift */,
 				BF858DBD197A774E002CEBB0 /* Data.swift */,
+				BF0ED23519972FD10065F633 /* Utils.swift */,
 			);
 			path = yogabook;
 			sourceTree = "<group>";
@@ -99,7 +133,9 @@
 		BF858D9A197A6083002CEBB0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF3B6B9E1996644E00860779 /* Sounds */,
 				BF858D9B197A6083002CEBB0 /* Info.plist */,
+				BF88A1B4198CABDE00A13823 /* poses.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +155,16 @@
 				BF858DAE197A6083002CEBB0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF88A1B8198D101300A13823 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF858DB9197A6D83002CEBB0 /* YogaSequenceViewCell.swift */,
+				BF88A1B9198D105500A13823 /* PoseViewCell.swift */,
+				BF88A1BB198DD30600A13823 /* PoseSequenceViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF88A1B7198D0DC500A13823 /* Poses.xcassets in Resources */,
 				BF858DA2197A6083002CEBB0 /* Main.storyboard in Resources */,
+				BF88A1B5198CABDE00A13823 /* poses.json in Resources */,
+				BF3B6B9D1996644700860779 /* tickB.aif in Resources */,
 				BF858DA4197A6083002CEBB0 /* Images.xcassets in Resources */,
+				BF0ED23419971EBC0065F633 /* finished_sequence.aif in Resources */,
+				BF3B6B9C1996644700860779 /* tickA.aif in Resources */,
+				BF0ED232199712550065F633 /* pose_change_bell.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +274,13 @@
 			files = (
 				BF858D9F197A6083002CEBB0 /* MainViewController.swift in Sources */,
 				BF858DBE197A774F002CEBB0 /* Data.swift in Sources */,
-				BF858DBA197A6D83002CEBB0 /* MainUICollectionViewCell.swift in Sources */,
+				BF858DBA197A6D83002CEBB0 /* YogaSequenceViewCell.swift in Sources */,
 				BF858D9D197A6083002CEBB0 /* AppDelegate.swift in Sources */,
-				BF631D04197E8E6300AB6D17 /* NewSequenceViewController.swift in Sources */,
+				BF3B6B971996252500860779 /* PlaySequenceViewController.swift in Sources */,
+				BF0ED23619972FD10065F633 /* Utils.swift in Sources */,
+				BF88A1BC198DD30600A13823 /* PoseSequenceViewCell.swift in Sources */,
+				BF88A1BA198D105500A13823 /* PoseViewCell.swift in Sources */,
+				BF631D04197E8E6300AB6D17 /* BuildSequenceViewController.swift in Sources */,
 				BF858DBC197A7533002CEBB0 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

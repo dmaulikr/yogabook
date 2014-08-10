@@ -10,23 +10,26 @@ import UIKit
 
 class MainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    @IBOutlet var collectionView: UICollectionView
-    
-    let mySequencesKey = "mySequencesKey"
-    var mySequences = [YogaSequence]()
+    @IBOutlet var collectionView: UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
-        let _mySequences: AnyObject! = Data.sharedInstance.unarchiveObjectForKey(mySequencesKey)
-        if _mySequences {
-            mySequences = _mySequences as [YogaSequence]
-        }
-        
-        let y = YogaSequence()
-        y.title = "HELLOW WORLD"
-        mySequences.append(y)
+    }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.reload()
+                
+    
+//        dispatch_after(dispatch_time(
+//            DISPATCH_TIME_NOW,
+//            Int64(2.0 * Double(NSEC_PER_SEC))
+//            ), dispatch_get_main_queue(), {
+//            println("WTF")
+//        })
+        
         
     }
 
@@ -34,20 +37,58 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         super.didReceiveMemoryWarning()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        
+        let identifier: String = segue.identifier
+        switch identifier {
+            
+        case "BuildSequenceID":
+            
+            if sender != nil {
+                // Editing
+                let yogaSequence = sender as YogaSequence
+                let nsVC = segue.destinationViewController as BuildSequenceViewController
+                nsVC.yogaSequence = yogaSequence
+            }
+        
+        case "PlaySequenceID":
+            let yogaSequence = sender as YogaSequence
+            let pqVC = segue.destinationViewController as PlaySequenceViewController
+            pqVC.yogaSequence = yogaSequence
+        default:
+             println("nothing")
+            
+        }
+        
+
+        
+    }
+    
     // UICollectionViewDelegate
     func collectionView(_collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
-        return mySequences.count + 1
+        return Data.sharedInstance.mySequencesDict.count + 1
     }
     
     func collectionView(_collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
-        let cell = _collectionView.dequeueReusableCellWithReuseIdentifier("MainCellIdentifier", forIndexPath: indexPath) as MainUICollectionViewCell
+        let cell = _collectionView.dequeueReusableCellWithReuseIdentifier("YogaSequenceViewCellID", forIndexPath: indexPath) as YogaSequenceViewCell
         
-        if self.mySequences.count > 0 && indexPath.row < self.mySequences.count{
-            let sequence = mySequences[indexPath.row]
+        if Data.sharedInstance.mySequencesDict.count > 0 && indexPath.row < Data.sharedInstance.mySequencesDict.count{
+            let sequence = Array(Data.sharedInstance.mySequencesDict.values)[indexPath.row]
+            
             cell.data = sequence
-            cell.editAction = { (yogaSequence: YogaSequence) -> Void in
-                println(yogaSequence.title)
+            
+            cell.editAction = {
+                [weak self] (yogaSequence: YogaSequence) -> () in
+                self!.performSegueWithIdentifier("BuildSequenceID", sender: yogaSequence)
             }
+            
+            cell.removeAction = {
+                [weak self] (yogaSequence: YogaSequence) -> () in
+                let removed = Data.sharedInstance.mySequencesDict.removeValueForKey(yogaSequence.key)
+                Data.sharedInstance.saveAll()
+                self!.reload()
+            }
+            
         } else {
             cell.renderLast()
         }
@@ -55,14 +96,18 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cell
     }
     
+    func reload() {
+        self.collectionView!.reloadData()
+    }
+    
     func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
-        let t = (self.mySequences.count, indexPath.row)
+        let t = (Data.sharedInstance.mySequencesDict.count, indexPath.row)
         switch t {
         case (let count, let row) where count > 0 && row < count:
-            let sequence = self.mySequences[row]
-            println("count = \(count) | row = \(row)")
+            let sequence = Array(Data.sharedInstance.mySequencesDict.values)[row]
+            self.performSegueWithIdentifier("PlaySequenceID", sender: sequence)
         default:
-            self.performSegueWithIdentifier("NewSequenceModal", sender: nil)
+            self.performSegueWithIdentifier("BuildSequenceID", sender: nil)
         }
         
     }
