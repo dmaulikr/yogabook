@@ -11,11 +11,11 @@ import UIKit
 
 class PoseSequenceViewCell : UICollectionViewCell {
     
-    @IBOutlet var sanskritLabel: UILabel?
-    @IBOutlet var titleLabel: UILabel?
-    @IBOutlet var categoryLabel: UILabel?
-    @IBOutlet var thumbnail: UIImageView?
-    @IBOutlet var timeLabel: UILabel?
+    @IBOutlet var sanskritLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var categoryLabel: UILabel!
+    @IBOutlet var thumbnail: UIImageView!
+    @IBOutlet var timeLabel: UILabel!
     
     var _data: PoseInSequence?
     var data: PoseInSequence {
@@ -35,10 +35,10 @@ class PoseSequenceViewCell : UICollectionViewCell {
     func render() {
         if _data != nil {
             let pose: Pose = Data.sharedInstance.posesDict[self.data.poseKey]!
-            self.sanskritLabel!.text = pose.sanskrit
-            self.titleLabel!.text = pose.prettyName()
-            self.categoryLabel!.text = pose.category
-            self.thumbnail!.image = UIImage(named: pose.key+"_th")
+            self.sanskritLabel.text = pose.sanskrit
+            self.titleLabel.text = pose.prettyName()
+            self.categoryLabel.text = pose.category
+            self.thumbnail.image = UIImage(named: pose.key+"_th")
             updateTimeLabel()
         }
     }
@@ -48,16 +48,16 @@ class PoseSequenceViewCell : UICollectionViewCell {
         _data = nil
         self.onItemRemove = nil
         self.onTimeChanged = nil
-        self.sanskritLabel!.text = ""
-        self.titleLabel!.text = ""
-        self.categoryLabel!.text = ""
-        self.thumbnail!.image = nil
+        self.sanskritLabel.text = ""
+        self.titleLabel.text = ""
+        self.categoryLabel.text = ""
+        self.thumbnail.image = nil
     }
     
     func updateTimeLabel() {
         let minutes = Int(self.data.seconds/60)
         let seconds = Int(self.data.seconds % 60)
-        self.timeLabel!.text = String(format: "%.2d m %.2d s", minutes, seconds)
+        self.timeLabel.text = String(format: "%.2d m %.2d s", minutes, seconds)
         if self.onTimeChanged != nil {
             self.onTimeChanged!()
         }

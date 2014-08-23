@@ -1,0 +1,1416 @@
+ [
+  {
+  "key": "6E9A4651-261E-4C74-9AD9-6D03878FC690",
+  "title": "Sun Salutation",
+  "poses": [
+            {
+            "poseKey": "mountain-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 15
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 15
+            },
+            {
+            "poseKey": "forward-bend-with-hands-against-back",
+            "seconds": 15
+            },
+            {
+            "poseKey": "low-lunge-left-leg-straight",
+            "seconds": 15
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "four-limbed-staff-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "upward-facing-dog",
+            "seconds": 15
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "low-lunge-right-leg-straight",
+            "seconds": 15
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 15
+            },
+            {
+            "poseKey": "forward-bend-with-hands-against-back",
+            "seconds": 15
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 15
+            },
+            {
+            "poseKey": "mountain-pose",
+            "seconds": 15
+            }
+            ]
+  },
+  {
+  "key": "B93C3A45-E968-45CB-BBB4-4761F51AE7EE",
+  "title": "Bikram",
+  "poses": [
+            {
+            "poseKey": "camel-pose-palms-set-against-feet",
+            "seconds": 15
+            },
+            {
+            "poseKey": "half-moon-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "half-moon-pose-left",
+            "seconds": 15
+            },
+            {
+            "poseKey": "half-moon-pose-right",
+            "seconds": 15
+            },
+            {
+            "poseKey": "chair-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "chair-pose-on-toes",
+            "seconds": 15
+            },
+            {
+            "poseKey": "chair-pose-on-toes-knees-together",
+            "seconds": 15
+            },
+            {
+            "poseKey": "eagle-pose-left",
+            "seconds": 15
+            },
+            {
+            "poseKey": "eagle-pose-right",
+            "seconds": 15
+            },
+            {
+            "poseKey": "extended-left-hand-to-big-toe-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "extended-right-hand-to-big-toe-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "lord-of-the-dance-left",
+            "seconds": 15
+            },
+            {
+            "poseKey": "lord-of-the-dance-right",
+            "seconds": 15
+            },
+            {
+            "poseKey": "warrior-pose-on-left-foot",
+            "seconds": 15
+            },
+            {
+            "poseKey": "warrior-pose-on-right-foot",
+            "seconds": 15
+            },
+            {
+            "poseKey": "wide-legged-forward-bend-with-hands-in-namaste",
+            "seconds": 15
+            },
+            {
+            "poseKey": "bikram-triangle-left",
+            "seconds": 15
+            },
+            {
+            "poseKey": "bikram-triangle-right",
+            "seconds": 15
+            },
+            {
+            "poseKey": "intense-left-stretch-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "intense-right-stretch-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "Vrikshasana left",
+            "seconds": 15
+            },
+            {
+            "poseKey": "Vrikshasana right",
+            "seconds": 15
+            },
+            {
+            "poseKey": "left-toestand",
+            "seconds": 15
+            },
+            {
+            "poseKey": "right-toestand",
+            "seconds": 15
+            },
+            {
+            "poseKey": "corpse-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "left-leg-wind-freeing-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "right-leg-wind-freeing-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "knee-press-both-legs",
+            "seconds": 15
+            },
+            {
+            "poseKey": "seated-forward-bend",
+            "seconds": 15
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "locust-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "full-locust-stand",
+            "seconds": 15
+            },
+            {
+            "poseKey": "bow-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "lying-diamond-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "child-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "camel-pose-palms-set-against-feet",
+            "seconds": 15
+            },
+            {
+            "poseKey": "hare-pose-thighs-forward-arms-alongside-legs",
+            "seconds": 15
+            },
+            {
+            "poseKey": "bend-to-left-leg",
+            "seconds": 15
+            },
+            {
+            "poseKey": "bend-to-right-leg",
+            "seconds": 15
+            },
+            {
+            "poseKey": "sitting-left-twist",
+            "seconds": 15
+            },
+            {
+            "poseKey": "sitting-right-twist",
+            "seconds": 15
+            }
+            ]
+  },
+  {
+  "key": "3069BA72-9D04-42E2-B701-019A1DC4BDFE",
+  "title": "Handstand Preparal 1",
+  "poses": [
+            {
+            "poseKey": "tree-pose-hands-in-namaste-extended-forward-right-support",
+            "seconds": 30
+            },
+            {
+            "poseKey": "warrior-pose-on-left-foot",
+            "seconds": 30
+            },
+            {
+            "poseKey": "warrior-pose-on-right-foot",
+            "seconds": 30
+            },
+            {
+            "poseKey": "crane-pose",
+            "seconds": 30
+            },
+            {
+            "poseKey": "lotus-in-shoulderstand",
+            "seconds": 30
+            },
+            {
+            "poseKey": "upward-lotus-pose",
+            "seconds": 30
+            },
+            {
+            "poseKey": "supported-embryo-pose",
+            "seconds": 30
+            },
+            {
+            "poseKey": "supported-shoulderstand",
+            "seconds": 30
+            },
+            {
+            "poseKey": "supported-plow-pose",
+            "seconds": 30
+            },
+            {
+            "poseKey": "plow-pose",
+            "seconds": 30
+            },
+            {
+            "poseKey": "headstand-on-left-foot",
+            "seconds": 30
+            },
+            {
+            "poseKey": "headstand-on-right-foot",
+            "seconds": 30
+            }
+            ]
+  },
+  {
+  "key": "7591EAC4-E6BA-46BC-BCB5-89F261E4120F",
+  "title": "Morning Waking Up",
+  "poses": [
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            },
+            {
+            "poseKey": "easy-forward-bend-pose-with-legs-half-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "forward-bend-with-hands-against-back",
+            "seconds": 20
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "full-locust-stand",
+            "seconds": 20
+            },
+            {
+            "poseKey": "hare-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cow-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cat-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cow-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cat-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            },
+            {
+            "poseKey": "easy-forward-bend-pose-with-legs-half-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "forward-bend-with-hands-against-back",
+            "seconds": 20
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "knees-chest-and-chin-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "hare-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            },
+            {
+            "poseKey": "forward-bend-with-hands-against-back",
+            "seconds": 20
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            },
+            {
+            "poseKey": "forward-bend-with-hands-against-back",
+            "seconds": 20
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            },
+            {
+            "poseKey": "greeting-pose",
+            "seconds": 20
+            }
+            ]
+  },
+  {
+  "key": "4164DCC4-A4CF-488B-A5F5-DBD9427ED8E9",
+  "title": "Get Morning Moving",
+  "poses": [
+            {
+            "poseKey": "perfect-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "perfect-pose-hands-up",
+            "seconds": 20
+            },
+            {
+            "poseKey": "perfect-pose-namaste",
+            "seconds": 20
+            },
+            {
+            "poseKey": "perfect-pose-twist-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "perfect-pose-hand-up-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "perfect-pose-hand-up-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "perfect-pose-twist-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "perfect-pose-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "seated-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "left-twist-with-left-leg-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "right-twist-with-right-leg-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "roller",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "forward-bend-with-hands-against-back",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            }
+            ]
+  },
+  {
+  "key": "1A64D2DD-1732-4DD9-9D97-2F951B31BEF7",
+  "title": "Morning Yoga Fix",
+  "poses": [
+            {
+            "poseKey": "roll-head",
+            "seconds": 20
+            },
+            {
+            "poseKey": "greeting-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose-left-leg-up",
+            "seconds": 20
+            },
+            {
+            "poseKey": "low-lunge-left-leg-straight",
+            "seconds": 20
+            },
+            {
+            "poseKey": "low-lunge-variation-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "wide-legged-forward-bend-with-feet-grab",
+            "seconds": 20
+            },
+            {
+            "poseKey": "wide-legged-forward-bend-with-hands-lock",
+            "seconds": 20
+            },
+            {
+            "poseKey": "warrior-pose-right-leg-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "extended-left-side-angle-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "bikram-triangle-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "warrior-pose-right-leg-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "extended-left-side-angle-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "bikram-triangle-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "dragon-pose-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "intense-side-stretch-to-right-leg",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose-right-leg-up",
+            "seconds": 20
+            },
+            {
+            "poseKey": "low-lunge-right-leg-straight",
+            "seconds": 20
+            },
+            {
+            "poseKey": "half-split-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "wide-legged-forward-bend-with-feet-grab",
+            "seconds": 20
+            },
+            {
+            "poseKey": "revolved-triangle-pose-left-arm-behind-right-foot",
+            "seconds": 20
+            },
+            {
+            "poseKey": "revolved-triangle-pose-right-arm-behind-left-foot",
+            "seconds": 20
+            },
+            {
+            "poseKey": "warrior-pose-left-leg-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "extended-right-side-angle-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "bikram-triangle-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "warrior-pose-left-leg-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "extended-right-side-angle-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "bikram-triangle-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "dragon-pose-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "intense-side-stretch-to-left-leg",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "hare-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cow-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cat-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cow-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cat-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 20
+            }
+            ]
+  },
+  {
+  "key": "D0FE4501-AA68-4BF5-8529-6DE87D8CAE03",
+  "title": "Strength Muscles",
+  "poses": [
+            {
+            "poseKey": "plank-pose",
+            "seconds": 30
+            },
+            {
+            "poseKey": "downward-facing-dog-pose",
+            "seconds": 30
+            },
+            {
+            "poseKey": "downward-facing-dog-pose-left-leg-up",
+            "seconds": 30
+            },
+            {
+            "poseKey": "downward-facing-dog-pose-right-leg-up",
+            "seconds": 30
+            },
+            {
+            "poseKey": "low-lunge-left-leg-straight",
+            "seconds": 30
+            },
+            {
+            "poseKey": "warrior-pose-left-leg-forward-right-leg-straight",
+            "seconds": 30
+            },
+            {
+            "poseKey": "reverse-warrior-left",
+            "seconds": 30
+            },
+            {
+            "poseKey": "reverse-warrior-right",
+            "seconds": 30
+            },
+            {
+            "poseKey": "extended-side-angle-left",
+            "seconds": 30
+            },
+            {
+            "poseKey": "extended-side-angle-right",
+            "seconds": 30
+            },
+            {
+            "poseKey": "bikram-triangle-left",
+            "seconds": 30
+            },
+            {
+            "poseKey": "bikram-triangle-right",
+            "seconds": 30
+            },
+            {
+            "poseKey": "downward-facing-dog-pose-left-leg-up",
+            "seconds": 30
+            }
+            ]
+  },
+  {
+  "key": "DF99155B-FFA3-414A-A763-C77856287E23",
+  "title": "Simple Fast Morning Balance",
+  "poses": [
+            {
+            "poseKey": "chair-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "twisted-chair-pose-left",
+            "seconds": 15
+            },
+            {
+            "poseKey": "twisted-chair-pose-lifted-left-foot",
+            "seconds": 15
+            },
+            {
+            "poseKey": "low-lunge-left-leg-straight-twisted",
+            "seconds": 15
+            },
+            {
+            "poseKey": "low-lunge-left-leg-straight",
+            "seconds": 15
+            },
+            {
+            "poseKey": "forward-stretch-pose-left-leg-up",
+            "seconds": 15
+            },
+            {
+            "poseKey": "chair-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "twisted-chair-pose-right",
+            "seconds": 15
+            },
+            {
+            "poseKey": "twisted-chair-pose-lifted-right-foot",
+            "seconds": 15
+            },
+            {
+            "poseKey": "low-lunge-right-leg-straight-twisted",
+            "seconds": 15
+            },
+            {
+            "poseKey": "low-lunge-right-leg-straight",
+            "seconds": 15
+            },
+            {
+            "poseKey": "forward-stretch-pose-right-leg-up",
+            "seconds": 15
+            },
+            {
+            "poseKey": "chair-pose",
+            "seconds": 15
+            }
+            ]
+  },
+  {
+  "key": "8859134D-5031-4A30-A335-A1DAC0F47E0A",
+  "title": "Yin Yoga - Leber",
+  "poses": [
+            {
+            "poseKey": "bound-angle-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "monkey-king-pose-with-rotation-and-bend-to-left-leg",
+            "seconds": 3
+            },
+            {
+            "poseKey": "monkey-king-pose-with-rotation-and-bend-to-right-leg",
+            "seconds": 3
+            },
+            {
+            "poseKey": "wide-angle-seated-forward-bend",
+            "seconds": 3
+            },
+            {
+            "poseKey": "frog-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "pigeon-pose-head-down-on-left-foot",
+            "seconds": 3
+            },
+            {
+            "poseKey": "pigeon-pose-head-down-on-right-foot",
+            "seconds": 3
+            },
+            {
+            "poseKey": "dragon-pose-left",
+            "seconds": 2
+            },
+            {
+            "poseKey": "twisted-dragon-pose-left",
+            "seconds": 1
+            },
+            {
+            "poseKey": "dragon-pose-right",
+            "seconds": 2
+            },
+            {
+            "poseKey": "twisted-dragon-pose-right",
+            "seconds": 2
+            },
+            {
+            "poseKey": "half-cobra-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "lying-hero-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "seated-forward-bend",
+            "seconds": 3
+            },
+            {
+            "poseKey": "rotation-pose-legs-to-the-left",
+            "seconds": 3
+            },
+            {
+            "poseKey": "rotation-pose-legs-to-the-right",
+            "seconds": 3
+            },
+            {
+            "poseKey": "corpse-pose",
+            "seconds": 3
+            }
+            ]
+  },
+  {
+  "key": "B7925FE0-417A-4A38-8E58-3142763CBBBC",
+  "title": "Yin Yoga - Gallenblaze",
+  "poses": [
+            {
+            "poseKey": "pigeon-pose-head-down-on-left-foot",
+            "seconds": 3
+            },
+            {
+            "poseKey": "pigeon-pose-head-down-on-right-foot",
+            "seconds": 3
+            },
+            {
+            "poseKey": "shoelace-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "lying-sideways-left",
+            "seconds": 3
+            },
+            {
+            "poseKey": "lying-sideways-right",
+            "seconds": 3
+            },
+            {
+            "poseKey": "kranich-left",
+            "seconds": 3
+            },
+            {
+            "poseKey": "kranich-right",
+            "seconds": 3
+            },
+            {
+            "poseKey": "dragonfly-against-wall",
+            "seconds": 3
+            },
+            {
+            "poseKey": "seated-forward-bend",
+            "seconds": 3
+            },
+            {
+            "poseKey": "lying-hero-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "corpse-pose",
+            "seconds": 3
+            }
+            ]
+  },
+  {
+  "key": "FE2360E4-A166-4842-B32E-C2FDBC96DAB7",
+  "title": "Yin Yoga - Nieren",
+  "poses": [
+            {
+            "poseKey": "tortoise-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "monkey-king-pose-with-rotation-and-bend-to-left-leg",
+            "seconds": 3
+            },
+            {
+            "poseKey": "monkey-king-pose-with-rotation-and-bend-to-right-leg",
+            "seconds": 3
+            },
+            {
+            "poseKey": "wide-angle-seated-forward-bend",
+            "seconds": 3
+            },
+            {
+            "poseKey": "happy-baby-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "seated-forward-bend",
+            "seconds": 3
+            },
+            {
+            "poseKey": "half-cobra-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "cobra-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "lying-hero-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "corpse-pose",
+            "seconds": 3
+            }
+            ]
+  },
+  {
+  "key": "0340CF99-E69D-4D61-B58E-E07EA27F64FA",
+  "title": "Yin Yoga - Magen & Milz",
+  "poses": [
+            {
+            "poseKey": "half-saddle-left",
+            "seconds": 3
+            },
+            {
+            "poseKey": "half-saddle-right",
+            "seconds": 3
+            },
+            {
+            "poseKey": "dragon-pose-left",
+            "seconds": 2
+            },
+            {
+            "poseKey": "dragon-pose-right",
+            "seconds": 2
+            },
+            {
+            "poseKey": "camel-pose-palms-set-against-feet",
+            "seconds": 1
+            },
+            {
+            "poseKey": "lying-hero-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "bound-angle-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "thread-and-needle-pose-left",
+            "seconds": 3
+            },
+            {
+            "poseKey": "thread-and-needle-pose-right",
+            "seconds": 3
+            },
+            {
+            "poseKey": "seated-forward-bend",
+            "seconds": 3
+            },
+            {
+            "poseKey": "easy-supported-shoulderstand-with-tilted-legs",
+            "seconds": 3
+            },
+            {
+            "poseKey": "plow-pose",
+            "seconds": 3
+            },
+            {
+            "poseKey": "rotation-pose-legs-to-the-left",
+            "seconds": 3
+            },
+            {
+            "poseKey": "rotation-pose-legs-to-the-right",
+            "seconds": 3
+            },
+            {
+            "poseKey": "corpse-pose",
+            "seconds": 3
+            }
+            ]
+  },
+  {
+  "key": "91E5B5EC-865F-4B15-A0D2-74201CD28EF9",
+  "title": "Balance Yoga",
+  "poses": [
+            {
+            "poseKey": "tree-pose-left-foot-in-front-of-thigh-wrong-title",
+            "seconds": 15
+            },
+            {
+            "poseKey": "left-toestand",
+            "seconds": 15
+            },
+            {
+            "poseKey": "tree-pose-right-foot-in-front-of-thigh-wrong-title",
+            "seconds": 15
+            },
+            {
+            "poseKey": "right-toestand",
+            "seconds": 15
+            },
+            {
+            "poseKey": "eagle-pose-left",
+            "seconds": 15
+            },
+            {
+            "poseKey": "eagle-pose-right",
+            "seconds": 15
+            },
+            {
+            "poseKey": "extended-left-hand-to-big-toe-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "extended-right-hand-to-big-toe-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "lord-of-the-dance-left",
+            "seconds": 15
+            },
+            {
+            "poseKey": "lord-of-the-dance-right",
+            "seconds": 15
+            }
+            ]
+  },
+  {
+  "key": "BA493BC0-CEA9-4831-97D6-B97C10607E36",
+  "title": "Hamstrings",
+  "poses": [
+            {
+            "poseKey": "standing-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "intense-side-stretch-to-left-leg",
+            "seconds": 20
+            },
+            {
+            "poseKey": "intense-side-stretch-to-right-leg",
+            "seconds": 20
+            },
+            {
+            "poseKey": "wide-legged-forward-bend-with-feet-grab",
+            "seconds": 20
+            },
+            {
+            "poseKey": "wide-angle-seated-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "bend-to-left-leg",
+            "seconds": 20
+            },
+            {
+            "poseKey": "bend-to-right-leg",
+            "seconds": 20
+            },
+            {
+            "poseKey": "seated-forward-bend",
+            "seconds": 20
+            },
+            {
+            "poseKey": "Reclining-Big-Toe-Pose-center-left-leg",
+            "seconds": 20
+            },
+            {
+            "poseKey": "Reclining-Big-Toe-Pose-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "Reclining-Big-Toe-Pose-center-right-leg",
+            "seconds": 20
+            },
+            {
+            "poseKey": "Reclining-Big-Toe-Pose-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "dragonfly-against-wall",
+            "seconds": 20
+            }
+            ]
+  },
+  {
+  "key": "221C1A09-429D-42D6-96E0-1F3BF5281BBC",
+  "title": "Hip Flexors",
+  "poses": [
+            {
+            "poseKey": "left-triangle-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "right-triangle-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "low-lunge-left-leg-straight",
+            "seconds": 20
+            },
+            {
+            "poseKey": "low-lunge-with-upward-stretch-left-leg-forward",
+            "seconds": 20
+            },
+            {
+            "poseKey": "pigeon-pose-with-one-hand-left-leg-grab",
+            "seconds": 20
+            },
+            {
+            "poseKey": "low-lunge-right-leg-straight",
+            "seconds": 20
+            },
+            {
+            "poseKey": "low-lunge-with-upward-stretch-right-leg-forward",
+            "seconds": 20
+            },
+            {
+            "poseKey": "pigeon-pose-with-one-hand-right-leg-grab",
+            "seconds": 20
+            }
+            ]
+  },
+  {
+  "key": "F4841972-5C74-48BC-ABA9-FBEB6B283CF2",
+  "title": "External Hip-Rotator",
+  "poses": [
+            {
+            "poseKey": "left-leg-wind-freeing-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "right-leg-wind-freeing-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "reclined-hip-opener-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "reclined-hip-opener-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "reclining-big-toe-pose-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "reclining-big-toe-pose-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "left-twist-with-left-leg-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "right-twist-with-right-leg-bent",
+            "seconds": 20
+            },
+            {
+            "poseKey": "revolved-triangle-pose-left-arm-behind-right-foot",
+            "seconds": 20
+            },
+            {
+            "poseKey": "revolved-triangle-pose-right-arm-behind-left-foot",
+            "seconds": 20
+            },
+            {
+            "poseKey": "bridge-pose",
+            "seconds": 20
+            }
+            ]
+  },
+  {
+  "key": "80A650AF-494A-4F0A-9C06-A94085324607",
+  "title": "Inner Thighs",
+  "poses": [
+            {
+            "poseKey": "frog-pose",
+            "seconds": 180
+            },
+            {
+            "poseKey": "happy-baby-pose",
+            "seconds": 120
+            },
+            {
+            "poseKey": "reclining-bound-angle-pose",
+            "seconds": 180
+            }
+            ]
+  },
+  {
+  "key": "A032B773-F1C7-4445-B9A8-A3A81BA467A8",
+  "title": "Abs Yoga",
+  "poses": [
+            {
+            "poseKey": "plank-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "side-plank-pose-on-left-hand-legs-together",
+            "seconds": 15
+            },
+            {
+            "poseKey": "side-plank-pose-on-right-hand-legs-together",
+            "seconds": 15
+            },
+            {
+            "poseKey": "cycling",
+            "seconds": 30
+            },
+            {
+            "poseKey": "leg-lifts",
+            "seconds": 30
+            },
+            {
+            "poseKey": "easy-boat-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cow-face-pose-left-hand-up-grab",
+            "seconds": 20
+            },
+            {
+            "poseKey": "cow-face-pose-right-hand-up-grab",
+            "seconds": 20
+            },
+            {
+            "poseKey": "eagle-pose-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "eagle-pose-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "bow-pose",
+            "seconds": 20
+            },
+            {
+            "poseKey": "child-pose",
+            "seconds": 20
+            }
+            ]
+  },
+  {
+  "key": "8ED0F996-95AD-4ABA-AC03-8E796FEA250B",
+  "title": "Stretch Spin Up",
+  "poses": [
+            {
+            "poseKey": "mountain-pose",
+            "seconds": 15
+            },
+            {
+            "poseKey": "mountain-pose-with-upward-stretch",
+            "seconds": 15
+            },
+            {
+            "poseKey": "neck-stretch-left",
+            "seconds": 10
+            },
+            {
+            "poseKey": "neck-stretch-right",
+            "seconds": 10
+            },
+            {
+            "poseKey": "rotated-warrior-pose-on-left-foot",
+            "seconds": 10
+            },
+            {
+            "poseKey": "rotated-warrior-pose-on-right-foot",
+            "seconds": 10
+            },
+            {
+            "poseKey": "table-pose",
+            "seconds": 5
+            },
+            {
+            "poseKey": "cat-pose",
+            "seconds": 5
+            },
+            {
+            "poseKey": "cow-pose",
+            "seconds": 5
+            },
+            {
+            "poseKey": "oposite-arm-leg-pose-right",
+            "seconds": 20
+            },
+            {
+            "poseKey": "oposite-arm-leg-pose-left",
+            "seconds": 20
+            },
+            {
+            "poseKey": "child-pose",
+            "seconds": 20
+            }
+            ]
+  }
+  ]

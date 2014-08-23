@@ -10,25 +10,19 @@ import UIKit
 
 class MainViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    @IBOutlet var collectionView: UICollectionView?
+    @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         self.reload()
-                
-    
-//        dispatch_after(dispatch_time(
-//            DISPATCH_TIME_NOW,
-//            Int64(2.0 * Double(NSEC_PER_SEC))
-//            ), dispatch_get_main_queue(), {
-//            println("WTF")
-//        })
+        
+//        🐢(5){
+//            println("hello!")
+//        }
         
         
     }
@@ -66,14 +60,14 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     // UICollectionViewDelegate
     func collectionView(_collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
-        return Data.sharedInstance.mySequencesDict.count + 1
+        return Data.sharedInstance.mySequences.count + 1
     }
     
     func collectionView(_collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
         let cell = _collectionView.dequeueReusableCellWithReuseIdentifier("YogaSequenceViewCellID", forIndexPath: indexPath) as YogaSequenceViewCell
         
         if Data.sharedInstance.mySequencesDict.count > 0 && indexPath.row < Data.sharedInstance.mySequencesDict.count{
-            let sequence = Array(Data.sharedInstance.mySequencesDict.values)[indexPath.row]
+            let sequence = Data.sharedInstance.mySequences[indexPath.row]
             
             cell.data = sequence
             
@@ -97,14 +91,14 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func reload() {
-        self.collectionView!.reloadData()
+        self.collectionView.reloadData()
     }
     
     func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
-        let t = (Data.sharedInstance.mySequencesDict.count, indexPath.row)
+        let t = (Data.sharedInstance.mySequences.count, indexPath.row)
         switch t {
         case (let count, let row) where count > 0 && row < count:
-            let sequence = Array(Data.sharedInstance.mySequencesDict.values)[row]
+            let sequence = Data.sharedInstance.mySequences[row]
             self.performSegueWithIdentifier("PlaySequenceID", sender: sequence)
         default:
             self.performSegueWithIdentifier("BuildSequenceID", sender: nil)

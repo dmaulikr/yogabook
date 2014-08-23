@@ -10,6 +10,46 @@
   "sanskrit": "Adho Mukha Kapotasana right"
   },
   {
+  "category": "Backbends",
+  "key": "pigeon-pose-with-one-hand-left-leg-grab",
+  "sanskrit": "Ekohastapada Kapotasana left"
+  },
+  {
+  "category": "Backbends",
+  "key": "pigeon-pose-with-one-hand-right-leg-grab",
+  "sanskrit": "Ekohastapada Kapotasana right"
+  },
+  {
+  "category": "Backbends",
+  "key": "pigeon-pose-on-left-foot-head-up",
+  "sanskrit": "Urdhva Mukha Kapotasana left"
+  },
+  {
+  "category": "Backbends",
+  "key": "pigeon-pose-on-right-foot-head-up",
+  "sanskrit": "Urdhva Mukha Kapotasana right"
+  },
+  {
+  "category": "Backbends",
+  "key": "pigeon-pose-hand-left",
+  "sanskrit": "Raja Kapotasana Hand Left"
+  },
+  {
+  "category": "Backbends",
+  "key": "pigeon-pose-hand-right",
+  "sanskrit": "Raja Kapotasana Hand Right"
+  },
+  {
+  "category": "Backbends",
+  "key": "pigeon-pose-arm-left",
+  "sanskrit": "Raja Kapotasana Arm Left"
+  },
+  {
+  "category": "Backbends",
+  "key": "pigeon-pose-arm-right",
+  "sanskrit": "Raja Kapotasana Arm Right"
+  },
+  {
   "category": "Standing",
   "key": "downward-facing-dog-pose",
   "sanskrit": "Adho Mukha Svanasana"
@@ -31,8 +71,36 @@
   },
   {
   "category": "Backbends",
-  "key": "half-wheel-pose",
-  "sanskrit": "Ardha Chakrasana"
+  "key": "cobra-pose",
+  "sanskrit": "Bhujangasana"
+  },
+  {
+  "category": "Backbends",
+  "key": "upward-facing-dog",
+  "sanskrit": "Urdhva Mukha Svanasana"
+  },
+  {
+  "category": "Standing",
+  "key": "greeting-pose",
+  "sanskrit": "Namaste"
+  },
+  {
+  "category": "Standing",
+  "key": "mountain-pose",
+  "sanskrit": "Tadasana"
+  },
+  {
+  "category": "Standing",
+  "key": "mountain-pose-with-upward-stretch",
+  "sanskrit": "Samasthiti"
+  },
+  {
+  "category": "Standing",
+  "key": "neck-stretch-left"
+  },
+  {
+  "category": "Standing",
+  "key": "neck-stretch-right"
   },
   {
   "category": "Backbends",
@@ -50,6 +118,21 @@
   "sanskrit": "Ardha Chandrasana right"
   },
   {
+  "category": "Standing",
+  "key": "wrist-grab-left-bend",
+  "sanskrit": "Utthita Konasana left"
+  },
+  {
+  "category": "Standing",
+  "key": "wrist-grab-right-bend",
+  "sanskrit": "Utthita Konasana right"
+  },
+  {
+  "category": "Standing",
+  "key": "half-moon-pose-with-stretch",
+  "sanskrit": "Utthita Ardha Chandrasana"
+  },
+  {
   "category": "Sitting & Twisting",
   "key": "sitting-left-twist",
   "sanskrit": "Ardha Matsyendrasana left"
@@ -65,259 +148,29 @@
   "sanskrit": "Ardha Navasana"
   },
   {
+  "category": "Balances",
+  "key": "high-boat-pose",
+  "sanskrit": "Paripurna Navasana"
+  },
+  {
+  "category": "Balances",
+  "key": "easy-boat-pose",
+  "sanskrit": "Sahaja Navasana"
+  },
+  {
   "category": "Sitting & Twisting",
   "key": "half-lotus-pose-left-leg-up",
   "sanskrit": "Ardha Padmasana left"
   },
   {
-  "category": "Forward bends",
-  "key": "intense-left-stretch-hands-behind-back-in-namaste",
-  "sanskrit": "Ardha Parsvottanasana left"
-  },
-  {
-  "category": "Forward bends",
-  "key": "intense-right-stretch-hands-behind-back-in-namaste",
-  "sanskrit": "Ardha Parsvottanasana right"
-  },
-  {
-  "category": "Forward bends",
-  "key": "forward-bend-with-hands-against-back",
-  "sanskrit": "Ardha Uttanasana"
-  },
-  {
-  "category": "Standing",
-  "key": "low-lunge-left-leg-forward",
-  "sanskrit": "Ashva Sanchalanasana left"
-  },
-  {
-  "category": "Standing",
-  "key": "low-lunge-right-leg-forward",
-  "sanskrit": "Ashva Sanchalanasana right"
+  "category": "Sitting & Twisting",
+  "key": "half-lotus-pose-right-leg-up",
+  "sanskrit": "Ardha Padmasana right"
   },
   {
   "category": "Sitting & Twisting",
-  "key": "bound-angle-pose",
-  "sanskrit": "Baddha Konasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "supported-headstand-feet-together",
-  "sanskrit": "Baddhakona Sirsasana"
-  },
-  {
-  "category": "Balances",
-  "key": "crane-pose",
-  "sanskrit": "Bakasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "crane-pose-with-left-leg-up",
-  "sanskrit": "Bakasana left"
-  },
-  {
-  "category": "Inverted",
-  "key": "crane-pose-with-right-leg-up",
-  "sanskrit": "Bakasana right"
-  },
-  {
-  "category": "Inverted",
-  "key": "crane-pose-head-on-the-mat",
-  "sanskrit": "Bakasana, head on the mat"
-  },
-  {
-  "category": "Sitting & Twisting",
-  "key": "child-pose",
-  "sanskrit": "Balasana"
-  },
-  {
-  "category": "Backbends",
-  "key": "cobra-pose",
-  "sanskrit": "Bhujangasana"
-  },
-  {
-  "category": "Backbends",
-  "key": "cow-pose",
-  "sanskrit": "Bidalasana"
-  },
-  {
-  "category": "Lying on the back",
-  "key": "rotation-pose-legs-to-the-left",
-  "sanskrit": "Chakrasana left"
-  },
-  {
-  "category": "Lying on the back",
-  "key": "rotation-pose-legs-to-the-right",
-  "sanskrit": "Chakrasana right"
-  },
-  {
-  "category": "Balances",
-  "key": "four-limbed-staff-pose",
-  "sanskrit": "Chaturanga Dandasana"
-  },
-  {
-  "category": "Balances",
-  "key": "plank-pose",
-  "sanskrit": "Dandasana"
-  },
-  {
-  "category": "Balances",
-  "key": "plank-pose",
-  "sanskrit": "Dandasana"
-  },
-  {
-  "category": "Backbends",
-  "key": "bow-pose",
-  "sanskrit": "Dhanurasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "crane-pose-with-half-bent-legs-up",
-  "sanskrit": "Dvapada Bakasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "headstand-on-left-foot",
-  "sanskrit": "Ekapada Sirsasana left"
-  },
-  {
-  "category": "Inverted",
-  "key": "headstand-on-right-foot",
-  "sanskrit": "Ekapada Sirsasana right"
-  },
-  {
-  "category": "Backbends",
-  "key": "pigeon-pose-with-one-hand-left-leg-grab",
-  "sanskrit": "Ekohastapada Kapotasana left"
-  },
-  {
-  "category": "Backbends",
-  "key": "pigeon-pose-with-one-hand-right-leg-grab",
-  "sanskrit": "Ekohastapada Kapotasana right"
-  },
-  {
-  "category": "Balances",
-  "key": "eagle-pose-left",
-  "sanskrit": "Garudasana left"
-  },
-  {
-  "category": "Balances",
-  "key": "eagle-pose-right",
-  "sanskrit": "Garudasana right"
-  },
-  {
-  "category": "Standing",
-  "key": "table-pose",
-  "sanskrit": "Goasana"
-  },
-  {
-  "category": "Backbends",
-  "key": "cat-pose",
-  "sanskrit": "Goasana advanced"
-  },
-  {
-  "category": "Sitting & Twisting",
-  "key": "cow-face-pose-left-hand-up-grab",
-  "sanskrit": "Gomukha Vajrasana left"
-  },
-  {
-  "category": "Sitting & Twisting",
-  "key": "cow-face-pose-right-hand-up-grab",
-  "sanskrit": "Gomukha Vajrasana right"
-  },
-  {
-  "category": "Inverted",
-  "key": "plow-pose",
-  "sanskrit": "Halasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "plow-pose-hands-under-head",
-  "sanskrit": "Halasana advanced"
-  },
-  {
-  "category": "Inverted",
-  "key": "supported-plow-pose",
-  "sanskrit": "Halasana supported"
-  },
-  {
-  "category": "Lying on the back",
-  "key": "spinal-bend-pose-legs-to-the-left",
-  "sanskrit": "Jathara Parivartanasana left"
-  },
-  {
-  "category": "Lying on the back",
-  "key": "spinal-bend-pose-legs-to-the-right",
-  "sanskrit": "Jathara Parivartanasana right"
-  },
-  {
-  "category": "Inverted",
-  "key": "ear-pressure-pose",
-  "sanskrit": "Karnapidasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "great-plow-pose",
-  "sanskrit": "Maha Halasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "unsupported-shoulderstand",
-  "sanskrit": "Maha Sarvangasana"
-  },
-  {
-  "category": "Sitting & Twisting",
-  "key": "garland-pose",
-  "sanskrit": "Malasana"
-  },
-  {
-  "category": "Sitting & Twisting",
-  "key": "perfect-pose",
-  "sanskrit": "Muktasana"
-  },
-  {
-  "category": "Standing",
-  "key": "greeting-pose",
-  "sanskrit": "Namaste"
-  },
-  {
-  "category": "Backbends",
-  "key": "lord-of-the-dance-left",
-  "sanskrit": "Natarajasana advanced left"
-  },
-  {
-  "category": "Backbends",
-  "key": "lord-of-the-dance-right",
-  "sanskrit": "Natarajasana advanced right"
-  },
-  {
-  "category": "Lying on the back",
-  "key": "dancing-shiva-pose-right-foot-on-left-knee",
-  "sanskrit": "Natarajasana left"
-  },
-  {
-  "category": "Lying on the back",
-  "key": "dancing-shiva-pose-left-foot-on-right-knee",
-  "sanskrit": "Natarajasana right"
-  },
-  {
-  "category": "Inverted",
-  "key": "unsupported-shoulderstand_1",
-  "sanskrit": "Niralamba Sarvangasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "unsupported-shoulderstand-hands-behind-back",
-  "sanskrit": "Niralamba Sarvangasana with hands behind back"
-  },
-  {
-  "category": "Balances",
-  "key": "left-toestand",
-  "sanskrit": "Padangusthasana left"
-  },
-  {
-  "category": "Balances",
-  "key": "right-toestand",
-  "sanskrit": "Padangusthasana right"
+  "key": "lotus-pose",
+  "sanskrit": "Padmasana"
   },
   {
   "category": "Inverted",
@@ -330,44 +183,74 @@
   "sanskrit": "Padma Sarvangasana advanced"
   },
   {
-  "category": "Sitting & Twisting",
-  "key": "lotus-pose",
-  "sanskrit": "Padmasana"
+  "category": "Inverted",
+  "key": "upward-lotus-pose",
+  "sanskrit": "Urdhva Padmasana"
+  },
+  {
+  "category": "Inverted",
+  "key": "supported-embryo-pose",
+  "sanskrit": "Salamba Pindasana"
+  },
+  {
+  "category": "Forward bends",
+  "key": "left-half-bound-lotus-intense-stretch-pose",
+  "sanskrit": "Ardha Baddha Padmottanasana left"
+  },
+  {
+  "category": "Forward bends",
+  "key": "right-half-bound-lotus-intense-stretch-pose",
+  "sanskrit": "Ardha Baddha Padmottanasana right"
   },
   {
   "category": "Balances",
-  "key": "high-boat-pose",
-  "sanskrit": "Paripurna Navasana"
+  "key": "tree-pose-left-foot-in-front-of-thigh-wrong-title",
+  "sanskrit": "Vriksasana, left foot in front of thigh"
+  },
+  {
+  "category": "Balances",
+  "key": "tree-pose-right-foot-in-front-of-thigh-wrong-title",
+  "sanskrit": "Vriksasana, right foot in front of thigh"
+  },
+  {
+  "category": "Standing",
+  "key": "tree-pose-hands-in-namaste-extended-forward-left-support",
+  "sanskrit": "Vrikshasana advanced left"
+  },
+  {
+  "category": "Standing",
+  "key": "tree-pose-hands-in-namaste-extended-forward-right-support",
+  "sanskrit": "Vrikshasana advanced right"
+  },
+  {
+  "category": "Standing",
+  "key": "tree-pose-on-left-foot",
+  "sanskrit": "Vrikshasana left"
+  },
+  {
+  "category": "Standing",
+  "key": "tree-pose-on-right-foot",
+  "sanskrit": "Vrikshasana right"
+  },
+  {
+  "category": "Balances",
+  "key": "left-toestand",
+  "sanskrit": "Padangusthasana left"
+  },
+  {
+  "category": "Balances",
+  "key": "right-toestand",
+  "sanskrit": "Padangusthasana right"
   },
   {
   "category": "Forward bends",
-  "key": "bend-to-left-leg-with-rotation",
-  "sanskrit": "Parivritta Janu Sirsasana left"
+  "key": "intense-left-stretch-hands-behind-back-in-namaste",
+  "sanskrit": "Ardha Parsvottanasana left"
   },
   {
   "category": "Forward bends",
-  "key": "bend-to-right-leg-with-rotation",
-  "sanskrit": "Parivritta Janu Sirsasana right"
-  },
-  {
-  "category": "Forward bends",
-  "key": "revolved-side-angle-pose-with-rotation-to-left-leg",
-  "sanskrit": "Parivritta Parsvokonasana left"
-  },
-  {
-  "category": "Forward bends",
-  "key": "revolved-side-angle-pose-with-rotation-to-right-leg",
-  "sanskrit": "Parivritta Parsvokonasana right"
-  },
-  {
-  "category": "Forward bends",
-  "key": "revolved-triangle-pose-left-arm-behind-right-foot",
-  "sanskrit": "Parivritta Trikonasana left"
-  },
-  {
-  "category": "Forward bends",
-  "key": "revolved-triangle-pose-right-arm-behind-left-foot",
-  "sanskrit": "Parivritta Trikonasana right"
+  "key": "intense-right-stretch-hands-behind-back-in-namaste",
+  "sanskrit": "Ardha Parsvottanasana right"
   },
   {
   "category": "Forward bends",
@@ -401,63 +284,73 @@
   },
   {
   "category": "Forward bends",
-  "key": "seated-forward-bend",
-  "sanskrit": "Paschimottanasana"
-  },
-  {
-  "category": "Lying on the back",
-  "key": "knee-press-both-legs",
-  "sanskrit": "Pavanamuktasana"
-  },
-  {
-  "category": "Lying on the back",
-  "key": "left-leg-wind-freeing-pose",
-  "sanskrit": "Pavanamuktasana left"
-  },
-  {
-  "category": "Lying on the back",
-  "key": "right-leg-wind-freeing-pose",
-  "sanskrit": "Pavanamuktasana right"
-  },
-  {
-  "category": "Forward bends",
-  "key": "wide-legged-forward-bend",
-  "sanskrit": "Prasarita Paddotanasana"
-  },
-  {
-  "category": "Forward bends",
-  "key": "wide-legged-forward-bend-with-hands-in-namaste",
-  "sanskrit": "Prasarita Paddotanasana advanced"
-  },
-  {
-  "category": "Forward bends",
-  "key": "wide-legged-forward-bend-with-hands-on-hips",
-  "sanskrit": "Prasarita Paddotanasana easy"
-  },
-  {
-  "category": "Forward bends",
-  "key": "wide-legged-forward-bend-with-feet-grab",
-  "sanskrit": "Prasarita Paddotanasana plus"
-  },
-  {
-  "category": "Inverted",
-  "key": "easy-plow-pose",
-  "sanskrit": "Purva Halasana"
-  },
-  {
-  "category": "Forward bends",
-  "key": "simple-peacock-pose",
-  "sanskrit": "Sahaja Mayurasana"
-  },
-  {
-  "category": "Balances",
-  "key": "easy-boat-pose",
-  "sanskrit": "Sahaja Navasana"
+  "key": "forward-bend-with-hands-against-back",
+  "sanskrit": "Ardha Uttanasana"
   },
   {
   "category": "Forward bends",
   "key": "easy-forward-bend-pose-with-legs-half-bent",
   "sanskrit": "Sahaja Uttanasana"
+  },
+  {
+  "category": "Forward bends",
+  "key": "standing-forward-bend",
+  "sanskrit": "Uttanasana"
+  },
+  {
+  "category": "Standing",
+  "key": "low-lunge-left-leg-forward",
+  "sanskrit": "Ashva Sanchalanasana left"
+  },
+  {
+  "category": "Standing",
+  "key": "low-lunge-right-leg-forward",
+  "sanskrit": "Ashva Sanchalanasana right"
+  },
+  {
+  "category": "Standing",
+  "key": "low-lunge-left-leg-straight",
+  "sanskrit": "Utthita Ashva Sanchalanasana left"
+  },
+  {
+  "category": "Standing",
+  "key": "low-lunge-right-leg-straight",
+  "sanskrit": "Utthita Ashva Sanchalanasana right"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "bound-angle-pose",
+  "sanskrit": "Baddha Konasana"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "reclining-bound-angle-pose",
+  "sanskrit": "Supta Baddha Konasana"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "bound-angle-pose-bending-down",
+  "sanskrit": "Baddha Konasana bending down"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "supported-reclining-bound-angle-pose",
+  "sanskrit": "Supta Baddha Konasana Supported"
+  },
+  {
+  "category": "Inverted",
+  "key": "headstand-on-left-foot",
+  "sanskrit": "Ekapada Sirsasana left"
+  },
+  {
+  "category": "Inverted",
+  "key": "headstand-on-right-foot",
+  "sanskrit": "Ekapada Sirsasana right"
+  },
+  {
+  "category": "Inverted",
+  "key": "supported-headstand-feet-together",
+  "sanskrit": "Baddhakona Sirsasana"
   },
   {
   "category": "Inverted",
@@ -476,28 +369,33 @@
   },
   {
   "category": "Inverted",
-  "key": "supported-shoulderstand",
-  "sanskrit": "Sarvangasana advanced"
+  "key": "supported-headstand-legs-parallel-to-floor",
+  "sanskrit": "Urdhva Sirsasana"
   },
   {
-  "category": "Lying on the back",
-  "key": "corpse-pose",
-  "sanskrit": "Savasana"
+  "category": "Balances",
+  "key": "crane-pose",
+  "sanskrit": "Bakasana"
   },
   {
-  "category": "Backbends",
-  "key": "bridge-pose",
-  "sanskrit": "Setu Bandhasana"
+  "category": "Inverted",
+  "key": "crane-pose-with-left-leg-up",
+  "sanskrit": "Bakasana left"
   },
   {
-  "category": "Sitting & Twisting",
-  "key": "hare-pose",
-  "sanskrit": "Shashankasana"
+  "category": "Inverted",
+  "key": "crane-pose-with-right-leg-up",
+  "sanskrit": "Bakasana right"
   },
   {
-  "category": "Forward bends",
-  "key": "hare-pose-thighs-forward-arms-alongside-legs",
-  "sanskrit": "Shashankasana advanced"
+  "category": "Inverted",
+  "key": "crane-pose-head-on-the-mat",
+  "sanskrit": "Bakasana, head on the mat"
+  },
+  {
+  "category": "Inverted",
+  "key": "crane-pose-with-half-bent-legs-up",
+  "sanskrit": "Dvapada Bakasana"
   },
   {
   "category": "Inverted",
@@ -505,24 +403,59 @@
   "sanskrit": "Sirsasana"
   },
   {
+  "category": "Sitting & Twisting",
+  "key": "child-pose",
+  "sanskrit": "Balasana"
+  },
+  {
   "category": "Lying on the back",
-  "key": "reclining-bound-angle-pose",
-  "sanskrit": "Supta Baddha Konasana"
+  "key": "rotation-pose-legs-to-the-left",
+  "sanskrit": "Chakrasana left"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "rotation-pose-legs-to-the-right",
+  "sanskrit": "Chakrasana right"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "left-leg-wind-freeing-pose",
+  "sanskrit": "Pavanamuktasana left"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "right-leg-wind-freeing-pose",
+  "sanskrit": "Pavanamuktasana right"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "happy-baby-pose",
+  "sanskrit": "Ananda Balasana"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "knee-press-both-legs",
+  "sanskrit": "Pavanamuktasana"
   },
   {
   "category": "Backbends",
-  "key": "lying-diamond-pose",
-  "sanskrit": "Supta Vajrasana"
+  "key": "half-wheel-pose",
+  "sanskrit": "Ardha Chakrasana"
   },
   {
-  "category": "Lying on the back",
-  "key": "lying-hero-pose",
-  "sanskrit": "Supta Virasana"
+  "category": "Backbends",
+  "key": "bridge-pose",
+  "sanskrit": "Setu Bandhasana"
   },
   {
-  "category": "Standing",
-  "key": "mountain-pose",
-  "sanskrit": "Tadasana"
+  "category": "Backbends",
+  "key": "upward-bow-pose",
+  "sanskrit": "Urdhva Dhanurasana"
+  },
+  {
+  "category": "Balances",
+  "key": "four-limbed-staff-pose",
+  "sanskrit": "Chaturanga Dandasana"
   },
   {
   "category": "Balances",
@@ -533,6 +466,312 @@
   "category": "Balances",
   "key": "staff-pose-with-right-leg-up",
   "sanskrit": "Trianga Dandasana right"
+  },
+  {
+  "category": "Balances",
+  "key": "plank-pose",
+  "sanskrit": "Dandasana"
+  },
+  {
+  "category": "Balances",
+  "key": "eagle-pose-left",
+  "sanskrit": "Garudasana left"
+  },
+  {
+  "category": "Balances",
+  "key": "eagle-pose-right",
+  "sanskrit": "Garudasana right"
+  },
+  {
+  "category": "Standing",
+  "key": "chair-pose",
+  "sanskrit": "Utkatasana"
+  },
+  {
+  "category": "Standing",
+  "key": "chair-pose-on-toes",
+  "sanskrit": "Utkatasana on toes"
+  },
+  {
+  "category": "Standing",
+  "key": "chair-pose-on-toes-knees-together",
+  "sanskrit": "Utkatasana on toes, knees together"
+  },
+  {
+  "category": "Standing",
+  "key": "twisted-chair-pose-left",
+  "sanskrit": "Parivrtta Utkatasana Left"
+  },
+  {
+  "category": "Standing",
+  "key": "twisted-chair-pose-right",
+  "sanskrit": "Parivrtta Utkatasana Right"
+  },
+  {
+  "category": "Standing",
+  "key": "twisted-chair-pose-lifted-left-foot",
+  "sanskrit": "Parivrtta Utkatasana Lifted Left Foot"
+  },
+  {
+  "category": "Standing",
+  "key": "twisted-chair-pose-lifted-right-foot",
+  "sanskrit": "Parivrtta Utkatasana Lifted Right Foot"
+  },
+  {
+  "category": "Standing",
+  "key": "table-pose",
+  "sanskrit": "Goasana"
+  },
+  {
+  "category": "Backbends",
+  "key": "cat-pose",
+  "sanskrit": "Goasana advanced"
+  },
+  {
+  "category": "Backbends",
+  "key": "cow-pose",
+  "sanskrit": "Bidalasana"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "oposite-arm-leg-pose-left"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "oposite-arm-leg-pose-right"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "cow-face-pose-left-hand-up-grab",
+  "sanskrit": "Gomukha Vajrasana left"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "cow-face-pose-right-hand-up-grab",
+  "sanskrit": "Gomukha Vajrasana right"
+  },
+  {
+  "category": "Inverted",
+  "key": "plow-pose",
+  "sanskrit": "Halasana"
+  },
+  {
+  "category": "Inverted",
+  "key": "plow-pose-hands-under-head",
+  "sanskrit": "Halasana advanced"
+  },
+  {
+  "category": "Inverted",
+  "key": "supported-plow-pose",
+  "sanskrit": "Halasana supported"
+  },
+  {
+  "category": "Inverted",
+  "key": "great-plow-pose",
+  "sanskrit": "Maha Halasana"
+  },
+  {
+  "category": "Inverted",
+  "key": "ear-pressure-pose",
+  "sanskrit": "Karnapidasana"
+  },
+  {
+  "category": "Inverted",
+  "key": "easy-plow-pose",
+  "sanskrit": "Purva Halasana"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "spinal-bend-pose-legs-to-the-left",
+  "sanskrit": "Jathara Parivartanasana left"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "spinal-bend-pose-legs-to-the-right",
+  "sanskrit": "Jathara Parivartanasana right"
+  },
+  {
+  "category": "Inverted",
+  "key": "unsupported-shoulderstand",
+  "sanskrit": "Maha Sarvangasana"
+  },
+  {
+  "category": "Inverted",
+  "key": "unsupported-shoulderstand_1",
+  "sanskrit": "Niralamba Sarvangasana"
+  },
+  {
+  "category": "Inverted",
+  "key": "unsupported-shoulderstand-hands-behind-back",
+  "sanskrit": "Niralamba Sarvangasana with hands behind back"
+  },
+  {
+  "category": "Inverted",
+  "key": "supported-shoulderstand",
+  "sanskrit": "Sarvangasana advanced"
+  },
+  {
+  "category": "Inverted",
+  "key": "easy-supported-shoulderstand-with-tilted-legs",
+  "sanskrit": "Sahaja Sarvangasana"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "garland-pose",
+  "sanskrit": "Malasana"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "perfect-pose",
+  "sanskrit": "Muktasana"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "perfect-pose-hands-up",
+  "sanskrit": "Muktasana Hands Up"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "perfect-pose-namaste",
+  "sanskrit": "Muktasana Hands Together"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "perfect-pose-forward-bend",
+  "sanskrit": "Muktasana Forward Bend"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "perfect-pose-twist-left",
+  "sanskrit": "Muktasana Twist Left"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "perfect-pose-twist-right",
+  "sanskrit": "Muktasana Twist Right"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "perfect-pose-hand-up-left",
+  "sanskrit": "Muktasana Hand up Left"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "perfect-pose-hand-up-right",
+  "sanskrit": "Muktasana Hand Up Right"
+  },
+  {
+  "category": "Backbends",
+  "key": "lord-of-the-dance-left",
+  "sanskrit": "Natarajasana advanced left"
+  },
+  {
+  "category": "Backbends",
+  "key": "lord-of-the-dance-right",
+  "sanskrit": "Natarajasana advanced right"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "dancing-shiva-pose-right-foot-on-left-knee",
+  "sanskrit": "Natarajasana left"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "dancing-shiva-pose-left-foot-on-right-knee",
+  "sanskrit": "Natarajasana right"
+  },
+  {
+  "category": "Balances",
+  "key": "both-big-toes-pose",
+  "sanskrit": "Ubhaya Padangusthasana"
+  },
+  {
+  "category": "Balances",
+  "key": "upward-facing-intense-stretch",
+  "sanskrit": "Urdhva Mukha Paschimottanasana"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "reclining-big-toe-pose-center-left-leg",
+  "sanskrit": "supta padangusthasana center left leg"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "reclining-big-toe-pose-center-right-leg",
+  "sanskrit": "supta padangusthasana center right leg"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "reclining-big-toe-pose-left",
+  "sanskrit": "supta padangusthasana left"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "reclining-big-toe-pose-right",
+  "sanskrit": "supta padangusthasana right"
+  },
+  {
+  "category": "Forward bends",
+  "key": "bend-to-left-leg-with-rotation",
+  "sanskrit": "Parivritta Janu Sirsasana left"
+  },
+  {
+  "category": "Forward bends",
+  "key": "bend-to-right-leg-with-rotation",
+  "sanskrit": "Parivritta Janu Sirsasana right"
+  },
+  {
+  "category": "Forward bends",
+  "key": "wide-angle-seated-forward-bend",
+  "sanskrit": "Upavishtha Konasana advanced"
+  },
+  {
+  "category": "Forward bends",
+  "key": "bend-to-left-leg",
+  "sanskrit": "Janu Sirsasana left"
+  },
+  {
+  "category": "Forward bends",
+  "key": "bend-to-right-leg",
+  "sanskrit": "Janu Sirsasana right"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "reclined-hip-opener-left"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "reclined-hip-opener-right"
+  },
+  {
+  "category": "Forward bends",
+  "key": "revolved-side-angle-pose-with-rotation-to-left-leg",
+  "sanskrit": "Parivritta Parsvokonasana left"
+  },
+  {
+  "category": "Forward bends",
+  "key": "revolved-side-angle-pose-with-rotation-to-right-leg",
+  "sanskrit": "Parivritta Parsvokonasana right"
+  },
+  {
+  "category": "Standing",
+  "key": "extended-left-side-angle-pose",
+  "sanskrit": "Utthita Parsvokonasana left"
+  },
+  {
+  "category": "Standing",
+  "key": "extended-right-side-angle-pose",
+  "sanskrit": "Utthita Parsvokonasana right"
+  },
+  {
+  "category": "Forward bends",
+  "key": "revolved-triangle-pose-left-arm-behind-right-foot",
+  "sanskrit": "Parivritta Trikonasana left"
+  },
+  {
+  "category": "Forward bends",
+  "key": "revolved-triangle-pose-right-arm-behind-left-foot",
+  "sanskrit": "Parivritta Trikonasana right"
   },
   {
   "category": "Standing",
@@ -555,99 +794,99 @@
   "sanskrit": "Trikonasana right"
   },
   {
-  "category": "Balances",
-  "key": "both-big-toes-pose",
-  "sanskrit": "Ubhaya Padangusthasana"
+  "category": "Standing",
+  "key": "extended-side-angle-left",
+  "sanskrit": "Utthita Parsvakonasana Left"
+  },
+  {
+  "category": "Standing",
+  "key": "extended-side-angle-right",
+  "sanskrit": "Utthita Parsvakonasana Right"
   },
   {
   "category": "Forward bends",
-  "key": "wide-angle-seated-forward-bend",
-  "sanskrit": "Upavishtha Konasana advanced"
+  "key": "seated-forward-bend",
+  "sanskrit": "Paschimottanasana"
+  },
+  {
+  "category": "Forward bends",
+  "key": "wide-legged-forward-bend",
+  "sanskrit": "Prasarita Paddotanasana"
+  },
+  {
+  "category": "Forward bends",
+  "key": "wide-legged-forward-bend-with-hands-in-namaste",
+  "sanskrit": "Prasarita Paddotanasana advanced"
+  },
+  {
+  "category": "Forward bends",
+  "key": "wide-legged-forward-bend-with-hands-on-hips",
+  "sanskrit": "Prasarita Paddotanasana easy"
+  },
+  {
+  "category": "Forward bends",
+  "key": "wide-legged-forward-bend-with-feet-grab",
+  "sanskrit": "Prasarita Paddotanasana plus"
+  },
+  {
+  "category": "Forward bends",
+  "key": "wide-legged-forward-bend-with-hands-lock",
+  "sanskrit": "Prasarita Paddotanasana with hands lock"
+  },
+  {
+  "category": "Forward bends",
+  "key": "simple-peacock-pose",
+  "sanskrit": "Sahaja Mayurasana"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "corpse-pose",
+  "sanskrit": "Savasana"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "hare-pose",
+  "sanskrit": "Shashankasana"
+  },
+  {
+  "category": "Forward bends",
+  "key": "hare-pose-thighs-forward-arms-alongside-legs",
+  "sanskrit": "Shashankasana advanced"
   },
   {
   "category": "Backbends",
-  "key": "low-lunge-with-upward-stretch-left-leg-forward",
-  "sanskrit": "Urdhva Ashva Sanchalasana left"
+  "key": "lying-diamond-pose",
+  "sanskrit": "Supta Vajrasana"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "lying-hero-pose",
+  "sanskrit": "Supta Virasana"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "lying-hero-pose-supported",
+  "sanskrit": "Supta Virasana supported"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "half-lying-hero-left",
+  "sanskrit": "Supta Virasana One Leg Left"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "half-lying-hero-right",
+  "sanskrit": "Supta Virasana One Leg Right"
   },
   {
   "category": "Backbends",
-  "key": "low-lunge-with-upward-stretch-right-leg-forward",
-  "sanskrit": "Urdhva Ashva Sanchalasana right"
-  },
-  {
-  "category": "Backbends",
-  "key": "upward-bow-pose",
-  "sanskrit": "Urdhva Dhanurasana"
-  },
-  {
-  "category": "Backbends",
-  "key": "pigeon-pose-on-left-foot-head-up",
-  "sanskrit": "Urdhva Mukha Kapotasana left"
-  },
-  {
-  "category": "Backbends",
-  "key": "pigeon-pose-on-right-foot-head-up",
-  "sanskrit": "Urdhva Mukha Kapotasana right"
-  },
-  {
-  "category": "Balances",
-  "key": "upward-facing-intense-stretch",
-  "sanskrit": "Urdhva Mukha Paschimottanasana"
-  },
-  {
-  "category": "Backbends",
-  "key": "upward-facing-dog",
-  "sanskrit": "Urdhva Mukha Svanasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "upward-lotus-pose",
-  "sanskrit": "Urdhva Padmasana"
-  },
-  {
-  "category": "Inverted",
-  "key": "supported-headstand-legs-parallel-to-floor",
-  "sanskrit": "Urdhva Sirsasana"
+  "key": "bow-pose",
+  "sanskrit": "Dhanurasana"
   },
   {
   "category": "Backbends",
   "key": "camel-pose-palms-set-against-feet",
   "sanskrit": "Ustrasana advanced"
-  },
-  {
-  "category": "Standing",
-  "key": "chair-pose",
-  "sanskrit": "Utkatasana"
-  },
-  {
-  "category": "Standing",
-  "key": "chair-pose-on-toes",
-  "sanskrit": "Utkatasana on toes"
-  },
-  {
-  "category": "Standing",
-  "key": "chair-pose-on-toes-knees-together",
-  "sanskrit": "Utkatasana on toes, knees together"
-  },
-  {
-  "category": "Forward bends",
-  "key": "standing-forward-bend",
-  "sanskrit": "Uttanasana"
-  },
-  {
-  "category": "Standing",
-  "key": "half-moon-pose-with-stretch",
-  "sanskrit": "Utthita Ardha Chandrasana"
-  },
-  {
-  "category": "Standing",
-  "key": "low-lunge-left-leg-straight",
-  "sanskrit": "Utthita Ashva Sanchalanasana left"
-  },
-  {
-  "category": "Standing",
-  "key": "low-lunge-right-leg-straight",
-  "sanskrit": "Utthita Ashva Sanchalanasana right"
   },
   {
   "category": "Standing",
@@ -671,28 +910,13 @@
   },
   {
   "category": "Standing",
-  "key": "wrist-grab-left-bend",
-  "sanskrit": "Utthita Konasana left"
-  },
-  {
-  "category": "Standing",
-  "key": "wrist-grab-right-bend",
-  "sanskrit": "Utthita Konasana right"
-  },
-  {
-  "category": "Standing",
-  "key": "extended-left-side-angle-pose",
-  "sanskrit": "Utthita Parsvokonasana left"
-  },
-  {
-  "category": "Standing",
-  "key": "extended-right-side-angle-pose",
-  "sanskrit": "Utthita Parsvokonasana right"
-  },
-  {
-  "category": "Standing",
   "key": "rotated-warrior-pose-on-left-foot",
   "sanskrit": "Virabhadrasana left"
+  },
+  {
+  "category": "Standing",
+  "key": "rotated-warrior-pose-on-right-foot",
+  "sanskrit": "Virabhadrasana right"
   },
   {
   "category": "Standing",
@@ -716,11 +940,6 @@
   },
   {
   "category": "Standing",
-  "key": "rotated-warrior-pose-on-right-foot",
-  "sanskrit": "Virabhadrasana right"
-  },
-  {
-  "category": "Standing",
   "key": "warrior-pose-on-left-foot",
   "sanskrit": "Virabhadrasana straight left"
   },
@@ -730,69 +949,66 @@
   "sanskrit": "Virabhadrasana straight right"
   },
   {
-  "category": "Balances",
-  "key": "tree-pose-left-foot-in-front-of-thigh-wrong-title",
-  "sanskrit": "Vriksasana, left foot in front of thigh"
-  },
-  {
-  "category": "Balances",
-  "key": "tree-pose-right-foot-in-front-of-thigh-wrong-title",
-  "sanskrit": "Vriksasana, right foot in front of thigh"
+  "category": "Standing",
+  "key": "reverse-warrior-left",
+  "sanskrit": "Viparita Virabhadrasana Left"
   },
   {
   "category": "Standing",
-  "key": "tree-pose-hands-in-namaste-extended-forward-left-support",
-  "sanskrit": "Vrikshasana advanced left"
+  "key": "reverse-warrior-right",
+  "sanskrit": "Viparita Virabhadrasana Right"
+  },
+  {
+  "category": "Backbends",
+  "key": "low-lunge-with-upward-stretch-left-leg-forward",
+  "sanskrit": "Urdhva Ashva Sanchalasana left"
+  },
+  {
+  "category": "Backbends",
+  "key": "low-lunge-with-upward-stretch-right-leg-forward",
+  "sanskrit": "Urdhva Ashva Sanchalasana right"
   },
   {
   "category": "Standing",
-  "key": "tree-pose-hands-in-namaste-extended-forward-right-support",
-  "sanskrit": "Vrikshasana advanced right"
+  "key": "low-lunge-left-leg-straight-twisted"
   },
   {
   "category": "Standing",
-  "key": "tree-pose-on-left-foot",
-  "sanskrit": "Vrikshasana left"
-  },
-  {
-  "category": "Standing",
-  "key": "tree-pose-on-right-foot",
-  "sanskrit": "Vrikshasana right"
+  "key": "low-lunge-right-leg-straight-twisted"
   },
   {
   "category": "Forward bends",
-  "key": "bend-to-left-leg",
-  "sanskrit": "Janu Sirsasana left"
+  "key": "half-split-left"
   },
   {
   "category": "Forward bends",
-  "key": "bend-to-right-leg",
-  "sanskrit": "Janu Sirsasana right"
-  },
-  {
-  "category": "Inverted",
-  "key": "supported-embryo-pose",
-  "sanskrit": "Salamba Pindasana"
+  "key": "half-split-right"
   },
   {
   "category": "Standing",
-  "key": "mountain-pose-with-upward-stretch",
-  "sanskrit": "Samasthiti"
+  "key": "dragon-pose-left"
   },
   {
-  "category": "Forward bends",
-  "key": "monkey-king-pose-with-rotation-and-bend-to-left-leg",
-  "sanskrit": "Hanumanasana advanced left"
+  "category": "Standing",
+  "key": "dragon-pose-right"
   },
   {
-  "category": "Forward bends",
-  "key": "monkey-king-pose-with-rotation-and-bend-to-right-leg",
-  "sanskrit": "Hanumanasana advanced right"
+  "category": "Standing",
+  "key": "twisted-dragon-pose-left"
   },
   {
-  "category": "Inverted",
-  "key": "easy-supported-shoulderstand-with-tilted-legs",
-  "sanskrit": "Sahaja Sarvangasana"
+  "category": "Standing",
+  "key": "twisted-dragon-pose-right"
+  },
+  {
+  "category": "Standing",
+  "key": "lizard-pose-left",
+  "sanskrit": "Utthan Pristhasana left"
+  },
+  {
+  "category": "Standing",
+  "key": "lizard-pose-right",
+  "sanskrit": "Utthan Pristhasana right"
   },
   {
   "category": "Balances",
@@ -815,11 +1031,6 @@
   "sanskrit": "Vat Nari Sansthan Shaktivardhak"
   },
   {
-  "category": "Forward bends",
-  "key": "wide-legged-forward-bend-with-hands-lock",
-  "sanskrit": "Prasarita Paddotanasana with hands lock"
-  },
-  {
   "category": "Balances",
   "key": "side-plank-pose-on-left-hand-legs-together",
   "sanskrit": "Vasisthasana side left"
@@ -831,7 +1042,140 @@
   },
   {
   "category": "Lying on the stomach",
+  "key": "full-locust-stand",
+  "sanskrit": "Poorna Salabhasana"
+  },
+  {
+  "category": "Lying on the stomach",
   "key": "locust-pose",
   "sanskrit": "Salambhasana"
+  },
+  {
+  "category": "Lying on the stomach",
+  "key": "locust-pose-with-right-leg-up",
+  "sanskrit": "Ekopada Salambhasana right"
+  },
+  {
+  "category": "Lying on the stomach",
+  "key": "locust-pose-with-left-leg-up",
+  "sanskrit": "Ekopada Salambhasana left"
+  },
+  {
+  "category": "Lying on the stomach",
+  "key": "frog-pose",
+  "sanskrit": "Mandukasana"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "thread-and-needle-pose-left"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "thread-and-needle-pose-right"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "shoelace-pose"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "cow-face-pose-right-leg-and-left-arm-up",
+  "sanskrit": "Gomukhasana left"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "cow-face-pose-left-leg-and-right-arm-up",
+  "sanskrit": "Gomukhasana right"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "lying-sideways-left"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "lying-sideways-right"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "dragonfly-against-wall"
+  },
+  {
+  "category": "Sitting & Twisting",
+  "key": "tortoise-pose",
+  "sanskrit": "Kurmasana"
+  },
+  {
+  "category": "Standing",
+  "key": "kranich-left"
+  },
+  {
+  "category": "Standing",
+  "key": "kranich-right"
+  },
+  {
+  "category": "Forward bends",
+  "key": "forward-stretch-pose-left-leg-up",
+  "sanskrit": "Urdhva Ekopadasana left"
+  },
+  {
+  "category": "Forward bends",
+  "key": "forward-stretch-pose-right-leg-up",
+  "sanskrit": "Urdhva Ekopadasana right"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "cycling-high"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "cycling-medium"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "cycling-low"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "leg-slide-left-on-ground"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "leg-slide-right-on-ground"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "leg-slide-left-off-ground"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "leg-slide-right-off-ground"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "leg-slide-both-feet-on-ground"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "leg-slide-both-feet-off-ground"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "arm-raise"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "arm-raise-leg-slide"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "leg-lifts"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "leg-scissors"
+  },
+  {
+  "category": "Lying on the back",
+  "key": "leg-alphabet"
   }
   ]

@@ -11,11 +11,11 @@ import UIKit
 
 class PoseViewCell : UICollectionViewCell {
     
-    @IBOutlet var sanskritLabel: UILabel?
-    @IBOutlet var titleLabel: UILabel?
-    @IBOutlet var categoryLabel: UILabel?
-    @IBOutlet var thumbnail: UIImageView?
-    @IBOutlet var spinner: UIActivityIndicatorView?
+    @IBOutlet var sanskritLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var categoryLabel: UILabel!
+    @IBOutlet var thumbnail: UIImageView!
+    @IBOutlet var spinner: UIActivityIndicatorView!
     
     var _data: Pose?
     var data: Pose {
@@ -31,19 +31,19 @@ class PoseViewCell : UICollectionViewCell {
     
     func render() {
         if _data != nil {
-            self.sanskritLabel!.text = self.data.sanskrit
-            self.titleLabel!.text = self.data.prettyName()
-            self.categoryLabel!.text = self.data.category
+            self.sanskritLabel.text = self.data.sanskrit
+            self.titleLabel.text = self.data.prettyName()
+            self.categoryLabel.text = self.data.category
             
-            self.spinner!.hidden = false
-            self.spinner!.startAnimating()
+            self.spinner.hidden = false
+            self.spinner.startAnimating()
             
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {
                 [weak self] in
                 let th = UIImage(named: self!.data.key+"_th")
                 dispatch_async(dispatch_get_main_queue(), {
-                    self!.thumbnail!.image = th
-                    self!.spinner!.hidden = true
+                    self!.thumbnail.image = th
+                    self!.spinner.hidden = true
                 })
             })
             
@@ -53,11 +53,11 @@ class PoseViewCell : UICollectionViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         _data = nil
-        self.sanskritLabel!.text = ""
-        self.titleLabel!.text = ""
-        self.categoryLabel!.text = ""
-        self.thumbnail!.image = nil
-        self.spinner!.hidden = true
+        self.sanskritLabel.text = ""
+        self.titleLabel.text = ""
+        self.categoryLabel.text = ""
+        self.thumbnail.image = nil
+        self.spinner.hidden = true
     }
     
 }

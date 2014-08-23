@@ -62,7 +62,7 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     func preloadSounds() {
         for sound in Sound.allValues {
             let (name, ext) = sound.components()
-            let url = NSBundle.mainBundle().URLForResource(name, withExtension: ext)
+            let url = NSBundle.mainBundle().URLForResource(name, withExtension: ext)!
             var error: NSError?
             let data = NSData.dataWithContentsOfURL(url, options: NSDataReadingOptions.DataReadingMappedAlways, error: &error)
             if error == nil {
@@ -160,4 +160,8 @@ func cancel_delay(closure:dispatch_cancelable_closure?) {
     if closure != nil {
         closure!(cancel: true)
     }
+}
+
+func 🐢(time: Double, clsr:()->()) {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(time*Double(NSEC_PER_SEC))), dispatch_get_main_queue(), clsr)
 }

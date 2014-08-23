@@ -11,12 +11,12 @@ import UIKit
 
 class PlaySequenceViewController: UIViewController {
     
-    @IBOutlet var imageView: UIImageView?
-    @IBOutlet var titleLabel: UILabel?
-    @IBOutlet var sanskritLabel: UILabel?
-    @IBOutlet var timeLabel: UILabel?
-    @IBOutlet var playImageView: UIImageView?
-    @IBOutlet var clockImageView: UIImageView?
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var sanskritLabel: UILabel!
+    @IBOutlet var timeLabel: UILabel!
+    @IBOutlet var playImageView: UIImageView!
+    @IBOutlet var clockImageView: UIImageView!
     
     var yogaSequence: YogaSequence?
     var poseIndex: Int = 0
@@ -38,7 +38,7 @@ class PlaySequenceViewController: UIViewController {
         self.poseIndex = 0
         self.currentSecondsLeft = 0
         self.intermissionSecondsLeft = 0
-        self.clockImageView!.hidden = true
+        self.clockImageView.hidden = true
         renderCurrent()
     }
     
@@ -46,9 +46,9 @@ class PlaySequenceViewController: UIViewController {
     func renderCurrent() {
         self.currentPoseInSequence = self.yogaSequence!.poses[self.poseIndex]
         self.currentPose = Data.sharedInstance.posesDict[self.currentPoseInSequence!.poseKey]!
-        self.titleLabel!.text = self.currentPose!.prettyName()
-        self.sanskritLabel!.text = self.currentPose!.sanskrit
-        self.imageView!.image = UIImage(named: self.currentPose!.key)
+        self.titleLabel.text = self.currentPose!.prettyName()
+        self.sanskritLabel.text = self.currentPose!.sanskrit
+        self.imageView.image = UIImage(named: self.currentPose!.key)
         
         let poseSecs = self.currentPoseInSequence!.seconds
         self.currentSecondsLeft = poseSecs
@@ -65,16 +65,16 @@ class PlaySequenceViewController: UIViewController {
                 self.pause_closure = delay(3, {
                     [weak self] in
                     AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.TickB)
-                    self!.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "onTimerTick", userInfo: nil, repeats: true)
+                    self!.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self!, selector: "onTimerTick", userInfo: nil, repeats: true)
                 });
                 
                 UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
                     [weak self] in
-                    self!.playImageView!.transform = CGAffineTransformMakeScale(1.5, 1.5)
-                    self!.playImageView!.alpha = 0
+                    self!.playImageView.transform = CGAffineTransformMakeScale(1.5, 1.5)
+                    self!.playImageView.alpha = 0
                 }, completion: {
                     [weak self] (finished: Bool) -> () in
-                    self!.playImageView!.hidden = true
+                    self!.playImageView.hidden = true
                 })
             }
         } else {
@@ -85,12 +85,12 @@ class PlaySequenceViewController: UIViewController {
                 self.timer!.invalidate()
                 self.timer = nil
             }
-            self.playImageView!.hidden = false
-            self.clockImageView!.hidden = true
+            self.playImageView.hidden = false
+            self.clockImageView.hidden = true
             UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
                 [weak self] in
-                self!.playImageView!.transform = CGAffineTransformMakeScale(1.0, 1.0)
-                self!.playImageView!.alpha = 0.6
+                self!.playImageView.transform = CGAffineTransformMakeScale(1.0, 1.0)
+                self!.playImageView.alpha = 0.6
             }, completion: nil)
         }
         
@@ -105,14 +105,14 @@ class PlaySequenceViewController: UIViewController {
     func onTimerTick() {
         
         if self.isIntermission {
-            self.clockImageView!.hidden = false
+            self.clockImageView.hidden = false
             if self.intermissionSecondsLeft > 0 {
                 AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.TickA)
                 self.intermissionSecondsLeft--
             } else {
                 // Change to play
                 self.isIntermission = false
-                self.clockImageView!.hidden = true
+                self.clockImageView.hidden = true
 //                self.currentSecondsLeft = self.currentPoseInSequence!.seconds
                 AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.TickB)
             }
@@ -149,7 +149,7 @@ class PlaySequenceViewController: UIViewController {
     
     func updateUI() {
         let (mins, secs) = Utils.getMinuteSecondsForSeconds(self.currentSecondsLeft)
-        self.timeLabel!.text = String(format: "%.2d:%.2d", mins, secs)
+        self.timeLabel.text = String(format: "%.2d:%.2d", mins, secs)
     }
     
     @IBAction func quit() {

@@ -10,11 +10,11 @@ import UIKit
 
 class BuildSequenceViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITextFieldDelegate {
     
-    @IBOutlet var posesCollectionView: UICollectionView?
-    @IBOutlet var sequenceCollectionView: UICollectionView?
-    @IBOutlet var titleTextField: UITextField?
-    @IBOutlet var totalTimeLabel: UILabel?
-    @IBOutlet var saveButton: UIButton?
+    @IBOutlet var posesCollectionView: UICollectionView!
+    @IBOutlet var sequenceCollectionView: UICollectionView!
+    @IBOutlet var titleTextField: UITextField!
+    @IBOutlet var totalTimeLabel: UILabel!
+    @IBOutlet var saveButton: UIButton!
     
     var yogaSequence: YogaSequence = YogaSequence()
     
@@ -29,7 +29,7 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         self.posesCollectionView?.addGestureRecognizer(doubleTapGesture)
         
         if !self.yogaSequence.title.isEmpty {
-            self.titleTextField!.text = self.yogaSequence.title
+            self.titleTextField.text = self.yogaSequence.title
         }
         updateUI()
         
@@ -49,13 +49,13 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
     
     @IBAction func onSave() {
         if self.yogaSequence.poses.count > 0 {
-            if !self.titleTextField!.text.isEmpty {
-                self.yogaSequence.title = self.titleTextField!.text
+            if !self.titleTextField.text.isEmpty {
+                self.yogaSequence.title = self.titleTextField.text
                 Data.sharedInstance.mySequencesDict[yogaSequence.key] = yogaSequence
                 Data.sharedInstance.saveAll()
                 self.dismissViewControllerAnimated(true, completion: nil)
             } else {
-                self.titleTextField!.becomeFirstResponder()
+                self.titleTextField.becomeFirstResponder()
             }
             
         }
@@ -65,9 +65,9 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         if gesture.state == .Ended {
             let point: CGPoint = gesture.locationInView(self.posesCollectionView)
             if point.x >= 0 && point.y >= 0 {
-                let indexPath: NSIndexPath = self.posesCollectionView!.indexPathForItemAtPoint(point)
+                let indexPath: NSIndexPath = self.posesCollectionView.indexPathForItemAtPoint(point)
                 if indexPath.row >= 0 {
-                    let cell: PoseViewCell = self.posesCollectionView!.cellForItemAtIndexPath(indexPath) as PoseViewCell
+                    let cell: PoseViewCell = self.posesCollectionView.cellForItemAtIndexPath(indexPath) as PoseViewCell
                     let poseInSequence = PoseInSequence(poseKey: cell.data.key)
                     self.yogaSequence.poses.append(poseInSequence)
                     reloadSequenceCollection()
@@ -77,28 +77,28 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
     }
     
     func reloadSequenceCollection() {
-        self.sequenceCollectionView!.reloadData()
+        self.sequenceCollectionView.reloadData()
         let cellW: CGFloat = 300.0
         let cellS: CGFloat = 10.0
         let w = self.view.frame.size.width
         var xOffset: CGFloat = CGFloat(self.yogaSequence.poses.count) * ( cellW + cellS ) + cellS
         xOffset = xOffset > w ? xOffset - w : 0.0
-        self.sequenceCollectionView!.setContentOffset(CGPointMake(xOffset, 0), animated: true)
+        self.sequenceCollectionView.setContentOffset(CGPointMake(xOffset, 0), animated: true)
         updateUI()
     }
     
     func updateUI() {
         updateTotalTime()
         if self.yogaSequence.poses.count > 0 {
-            self.saveButton!.enabled = true
+            self.saveButton.enabled = true
         } else {
-            self.saveButton!.enabled = false
+            self.saveButton.enabled = false
         }
     }
     
     func updateTotalTime() {
         let (minutes, seconds) = self.yogaSequence.getMinutesSeconds()
-        self.totalTimeLabel!.text = String(format: "%.2d m %.2d s", minutes, seconds)
+        self.totalTimeLabel.text = String(format: "%.2d m %.2d s", minutes, seconds)
     }
     
     // UICollectionViewDelegate

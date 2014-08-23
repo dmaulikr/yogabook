@@ -26,6 +26,7 @@
 		BF88A1B7198D0DC500A13823 /* Poses.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF88A1B6198D0DC500A13823 /* Poses.xcassets */; };
 		BF88A1BA198D105500A13823 /* PoseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88A1B9198D105500A13823 /* PoseViewCell.swift */; };
 		BF88A1BC198DD30600A13823 /* PoseSequenceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88A1BB198DD30600A13823 /* PoseSequenceViewCell.swift */; };
+		BFB9B596199F12CC00C160AE /* sequences.json in Resources */ = {isa = PBXBuildFile; fileRef = BFB9B595199F12CC00C160AE /* sequences.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,11 @@
 		BF88A1B6198D0DC500A13823 /* Poses.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Poses.xcassets; sourceTree = "<group>"; };
 		BF88A1B9198D105500A13823 /* PoseViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseViewCell.swift; sourceTree = "<group>"; };
 		BF88A1BB198DD30600A13823 /* PoseSequenceViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseSequenceViewCell.swift; sourceTree = "<group>"; };
+		BFAA1A5C19A860A300102E9A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BFAA1A5E19A860B000102E9A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BFAA1A6019A8614E00102E9A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		BFAA1A6219A8616000102E9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BFB9B595199F12CC00C160AE /* sequences.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sequences.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,10 @@
 		BF858D8E197A6083002CEBB0 = {
 			isa = PBXGroup;
 			children = (
+				BFAA1A6219A8616000102E9A /* UIKit.framework */,
+				BFAA1A6019A8614E00102E9A /* CoreFoundation.framework */,
+				BFAA1A5E19A860B000102E9A /* AVFoundation.framework */,
+				BFAA1A5C19A860A300102E9A /* AudioToolbox.framework */,
 				BF858D99197A6083002CEBB0 /* yogabook */,
 				BF858DAC197A6083002CEBB0 /* yogabookTests */,
 				BF858D98197A6083002CEBB0 /* Products */,
@@ -136,6 +146,7 @@
 				BF3B6B9E1996644E00860779 /* Sounds */,
 				BF858D9B197A6083002CEBB0 /* Info.plist */,
 				BF88A1B4198CABDE00A13823 /* poses.json */,
+				BFB9B595199F12CC00C160AE /* sequences.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -251,6 +262,7 @@
 				BF858DA2197A6083002CEBB0 /* Main.storyboard in Resources */,
 				BF88A1B5198CABDE00A13823 /* poses.json in Resources */,
 				BF3B6B9D1996644700860779 /* tickB.aif in Resources */,
+				BFB9B596199F12CC00C160AE /* sequences.json in Resources */,
 				BF858DA4197A6083002CEBB0 /* Images.xcassets in Resources */,
 				BF0ED23419971EBC0065F633 /* finished_sequence.aif in Resources */,
 				BF3B6B9C1996644700860779 /* tickA.aif in Resources */,

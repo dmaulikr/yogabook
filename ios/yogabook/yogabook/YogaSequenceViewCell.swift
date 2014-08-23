@@ -10,11 +10,11 @@ import UIKit
 
 class YogaSequenceViewCell : UICollectionViewCell {
     
-    @IBOutlet var titleLabel: UILabel?
-    @IBOutlet var totalTimeLabel: UILabel?
-    @IBOutlet var plusLabel: UILabel?
-    @IBOutlet var editBtn: UIButton?
-    @IBOutlet var removeBtn: UIButton?
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var totalTimeLabel: UILabel!
+    @IBOutlet var plusLabel: UILabel!
+    @IBOutlet var editBtn: UIButton!
+    @IBOutlet var removeBtn: UIButton!
     var _data: YogaSequence?
     var data: YogaSequence {
     set(newValue) {
@@ -47,23 +47,23 @@ class YogaSequenceViewCell : UICollectionViewCell {
     
     func render() {
         if _data != nil {
-            self.plusLabel!.hidden = true
-            self.titleLabel!.hidden = false
-            self.titleLabel!.text = _data!.title.uppercaseString
-            self.editBtn!.hidden = false
-            self.removeBtn!.hidden = false
+            self.plusLabel.hidden = true
+            self.titleLabel.hidden = false
+            self.titleLabel.text = _data!.title.uppercaseString
+            self.editBtn.hidden = false
+            self.removeBtn.hidden = false
             let (minutes, seconds) = self.data.getMinutesSeconds()
-            self.totalTimeLabel!.text = String(format: "%.2d m %.2d s", minutes, seconds)
-            self.totalTimeLabel!.hidden = false
+            self.totalTimeLabel.text = String(format: "%.2d m %.2d s", minutes, seconds)
+            self.totalTimeLabel.hidden = false
         }
     }
     
     func renderLast() {
-        self.titleLabel!.hidden = true
-        self.editBtn!.hidden = true
-        self.removeBtn!.hidden = true
-        self.totalTimeLabel!.hidden = true
-        self.plusLabel!.hidden = false
+        self.titleLabel.hidden = true
+        self.editBtn.hidden = true
+        self.removeBtn.hidden = true
+        self.totalTimeLabel.hidden = true
+        self.plusLabel.hidden = false
     }
     
     override func prepareForReuse() {
@@ -71,11 +71,11 @@ class YogaSequenceViewCell : UICollectionViewCell {
         _data = nil
         self.removeAction = nil
         self.editAction = nil
-        self.titleLabel!.text = ""
-        self.editBtn!.hidden = true
-        self.removeBtn!.hidden = true
-        self.totalTimeLabel!.hidden = true
-        self.plusLabel!.hidden = true
+        self.titleLabel.text = ""
+        self.editBtn.hidden = true
+        self.removeBtn.hidden = true
+        self.totalTimeLabel.hidden = true
+        self.plusLabel.hidden = true
     }
     
 }
