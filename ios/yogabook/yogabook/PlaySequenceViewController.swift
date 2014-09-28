@@ -19,15 +19,15 @@ class PlaySequenceViewController: UIViewController {
     @IBOutlet var clockImageView: UIImageView!
     
     var yogaSequence: YogaSequence?
-    var poseIndex: Int = 0
+    var poseIndex = 0
     var currentPoseInSequence: PoseInSequence?
     var currentPose: Pose?
-    var isIntermission: Bool = false
-    var isPaused: Bool = true
+    var isIntermission = true
+    var isPaused = true
     var timer: NSTimer?
-    var currentSecondsLeft: Int = 0
-    var intermissionSecondsLeft: Int = 0
-    let intermissionTotalSeconds = 10
+    var currentSecondsLeft = 0
+    var intermissionSecondsLeft = 0
+    var didSpeakName = false
     var pause_closure: dispatch_cancelable_closure?
     
     override func viewDidLoad() {
@@ -37,9 +37,19 @@ class PlaySequenceViewController: UIViewController {
         self.view.addGestureRecognizer(tapGesture)
         self.poseIndex = 0
         self.currentSecondsLeft = 0
-        self.intermissionSecondsLeft = 0
+        self.intermissionSecondsLeft = 10
         self.clockImageView.hidden = true
         renderCurrent()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIApplication.sharedApplication().idleTimerDisabled = true
+        super.viewDidAppear(animated)
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        UIApplication.sharedApplication().idleTimerDisabled = false
+        super.viewDidDisappear(animated)
     }
     
     
@@ -62,11 +72,7 @@ class PlaySequenceViewController: UIViewController {
             if self.timer == nil {
                 
                 cancel_delay(self.pause_closure)
-                self.pause_closure = delay(3, {
-                    [weak self] in
-                    AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.TickB)
-                    self!.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self!, selector: "onTimerTick", userInfo: nil, repeats: true)
-                });
+                self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "onTimerTick", userInfo: nil, repeats: true)
                 
                 UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
                     [weak self] in
@@ -104,44 +110,58 @@ class PlaySequenceViewController: UIViewController {
     
     func onTimerTick() {
         
-        if self.isIntermission {
-            self.clockImageView.hidden = false
-            if self.intermissionSecondsLeft > 0 {
-                AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.TickA)
-                self.intermissionSecondsLeft--
+        if isIntermission {
+            clockImageView.hidden = false
+            if intermissionSecondsLeft > 0 {
+                if intermissionSecondsLeft <= 3 {
+                    AudioPlayer.sharedInstance.speakText(String(intermissionSecondsLeft))
+                }
+                intermissionSecondsLeft--
             } else {
                 // Change to play
-                self.isIntermission = false
-                self.clockImageView.hidden = true
-//                self.currentSecondsLeft = self.currentPoseInSequence!.seconds
-                AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.TickB)
+                isIntermission = false
+                clockImageView.hidden = true
+                AudioPlayer.sharedInstance.speakText("Go!")
             }
         } else {
-            if self.currentSecondsLeft > 0 {
-                self.currentSecondsLeft--
-                if self.currentSecondsLeft % 5 == 0 {
-                    AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.TickB)
+            if currentSecondsLeft > 0 {
+                if currentSecondsLeft <= 3 {
+                    AudioPlayer.sharedInstance.speakText(String(currentSecondsLeft))
+                }
+                if currentSecondsLeft % 10 == 0 && currentSecondsLeft != 0{
+                    AudioPlayer.sharedInstance.speakText(String(currentSecondsLeft) + " seconds remaining")
                 }
                 updateUI()
+                currentSecondsLeft--
             } else {
                 
+                AudioPlayer.sharedInstance.speakText("Rest")
                 self.poseIndex++
                 if self.poseIndex < self.yogaSequence!.poses.count {
                     // Pose change
                     renderCurrent()
-                    AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.ChangePose)
+//                    AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.ChangePose)
+                    didSpeakName = false
                     
                     // Change to intermission
-                    self.intermissionSecondsLeft = self.intermissionTotalSeconds
+                    self.intermissionSecondsLeft = self.yogaSequence!.intermissonSeconds
                     self.isIntermission = true
                 } else {
                     // Sequence finished!
                     self.togglePause()
                     self.poseIndex = 0
                     renderCurrent()
-                    AudioPlayer.sharedInstance.playSound(AudioPlayer.Sound.FinishedSequence)
+                    AudioPlayer.sharedInstance.speakText("Finished!")
+                    AudioPlayer.sharedInstance.speakText("Great work!")
+                    AudioPlayer.sharedInstance.speakText("You droppy animal")
                 }
             }
+        }
+        
+        if !didSpeakName {
+            didSpeakName = true
+            AudioPlayer.sharedInstance.speakText("Get ready for:")
+            AudioPlayer.sharedInstance.speakText(self.currentPose!.prettyName())
         }
         
         self.pause_closure = nil
@@ -157,7 +177,7 @@ class PlaySequenceViewController: UIViewController {
             self.timer!.invalidate()
             self.timer = nil
         }
-        self.navigationController.popViewControllerAnimated(true)
+        self.navigationController!.popViewControllerAnimated(true);
     }
     
 }

@@ -47,6 +47,8 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
         return Static.instance
     }
     
+    let speech = AVSpeechSynthesizer()
+    
     override init() {
         let avsession = AVAudioSession.sharedInstance()
         var error: NSError?
@@ -114,6 +116,15 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     func audioPlayerBeginInterruption(player: AVAudioPlayer!) {
         println("audioPlayerBeginInterruption")
         removePlayer(player)
+    }
+    
+    // Speech Synth
+    func speakText(text: String) {
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.pitchMultiplier = 1.07
+        utterance.rate = 0.1
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-AU")
+        self.speech.speakUtterance(utterance)
     }
     
 }

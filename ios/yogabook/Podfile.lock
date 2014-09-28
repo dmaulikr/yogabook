@@ -1,0 +1,10 @@
+PODS:
+  - LXReorderableCollectionViewFlowLayout (0.1.1)
+
+DEPENDENCIES:
+  - LXReorderableCollectionViewFlowLayout
+
+SPEC CHECKSUMS:
+  LXReorderableCollectionViewFlowLayout: b4e25543263e27d4c147109ae5ead01cc9119f23
+
+COCOAPODS: 0.33.1

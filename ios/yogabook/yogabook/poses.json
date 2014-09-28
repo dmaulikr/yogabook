@@ -318,6 +318,16 @@
   "sanskrit": "Utthita Ashva Sanchalanasana right"
   },
   {
+  "category": "Standing",
+  "key": "lizard-pose-left",
+  "sanskrit": "Utthan Pristhasana left"
+  },
+  {
+  "category": "Standing",
+  "key": "lizard-pose-right",
+  "sanskrit": "Utthan Pristhasana right"
+  },
+  {
   "category": "Sitting & Twisting",
   "key": "bound-angle-pose",
   "sanskrit": "Baddha Konasana"
@@ -727,6 +737,16 @@
   },
   {
   "category": "Forward bends",
+  "key": "wide-angle-seated-left-bend",
+  "sanskrit": "Parsva Upavista Konasana left"
+  },
+  {
+  "category": "Forward bends",
+  "key": "wide-angle-seated-right-bend",
+  "sanskrit": "Parsva Upavista Konasana right"
+  },
+  {
+  "category": "Forward bends",
   "key": "bend-to-left-leg",
   "sanskrit": "Janu Sirsasana left"
   },
@@ -999,16 +1019,6 @@
   {
   "category": "Standing",
   "key": "twisted-dragon-pose-right"
-  },
-  {
-  "category": "Standing",
-  "key": "lizard-pose-left",
-  "sanskrit": "Utthan Pristhasana left"
-  },
-  {
-  "category": "Standing",
-  "key": "lizard-pose-right",
-  "sanskrit": "Utthan Pristhasana right"
   },
   {
   "category": "Balances",

@@ -22,7 +22,9 @@ class Data {
     var poses: [Pose]
     var posesDict: Dictionary<String, Pose>
     var mySequencesDict: Dictionary<String, YogaSequence>
-    var mySequences: [YogaSequence]
+    
+    // Ordered
+    var mySequences: [YogaSequence] = [YogaSequence]()
     
     init() {
         
@@ -94,7 +96,7 @@ class Data {
                                 
                             } else {
                                 healthy = false
-//                                println("pose not found: \(poseKey) in sequence: \(seqTitle). skipping")
+                                println("pose not found: \(poseKey) in sequence: \(seqTitle). skipping")
                             }
                         }
                         
@@ -114,8 +116,7 @@ class Data {
         self.poses = _poses
         self.posesDict = _posesDict
         self.mySequencesDict = _mySequencesDict as Dictionary<String, YogaSequence>
-        let sequencesUnordered = Array(_mySequencesDict.values) as [YogaSequence]
-        self.mySequences = sequencesUnordered.sorted({$0.title < $1.title})
+        updateAll()
         saveAll()
         
         // Debugging
@@ -124,6 +125,23 @@ class Data {
 //        self.mySequences.append(y)
 //        self.mySequences.append(y)
     
+    }
+    
+    func updateAll() {
+        let sequencesUnordered = Array(self.mySequencesDict.values) as [YogaSequence]
+        self.mySequences = sequencesUnordered.sorted({$0.sortingIndex < $1.sortingIndex})
+    }
+    
+    func insertSequence(yogaSequence: YogaSequence) {
+        self.mySequencesDict[yogaSequence.key] = yogaSequence
+        updateAll()
+        saveAll()
+    }
+    
+    func removeSequenceWithKey(sequenceKey: String) {
+        self.mySequencesDict.removeValueForKey(sequenceKey)
+        updateAll()
+        saveAll()
     }
     
     func saveAll() {

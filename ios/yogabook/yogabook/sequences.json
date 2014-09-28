@@ -146,11 +146,11 @@
             "seconds": 15
             },
             {
-            "poseKey": "Vrikshasana left",
+            "poseKey": "tree-pose-on-left-foot",
             "seconds": 15
             },
             {
-            "poseKey": "Vrikshasana right",
+            "poseKey": "tree-pose-on-right-foot",
             "seconds": 15
             },
             {
@@ -233,7 +233,7 @@
   },
   {
   "key": "3069BA72-9D04-42E2-B701-019A1DC4BDFE",
-  "title": "Handstand Preparal 1",
+  "title": "Handstand Preparal",
   "poses": [
             {
             "poseKey": "tree-pose-hands-in-namaste-extended-forward-right-support",
@@ -542,10 +542,6 @@
   "title": "Morning Yoga Fix",
   "poses": [
             {
-            "poseKey": "roll-head",
-            "seconds": 20
-            },
-            {
             "poseKey": "greeting-pose",
             "seconds": 20
             },
@@ -578,7 +574,7 @@
             "seconds": 20
             },
             {
-            "poseKey": "low-lunge-variation-right",
+            "poseKey": "half-split-right",
             "seconds": 20
             },
             {
@@ -861,75 +857,75 @@
   "poses": [
             {
             "poseKey": "bound-angle-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
-            "poseKey": "monkey-king-pose-with-rotation-and-bend-to-left-leg",
-            "seconds": 3
+            "poseKey": "wide-angle-seated-left-bend",
+            "seconds": 180
             },
             {
-            "poseKey": "monkey-king-pose-with-rotation-and-bend-to-right-leg",
-            "seconds": 3
+            "poseKey": "wide-angle-seated-right-bend",
+            "seconds": 180
             },
             {
             "poseKey": "wide-angle-seated-forward-bend",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "frog-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "pigeon-pose-head-down-on-left-foot",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "pigeon-pose-head-down-on-right-foot",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "dragon-pose-left",
-            "seconds": 2
+            "seconds": 180
             },
             {
             "poseKey": "twisted-dragon-pose-left",
-            "seconds": 1
+            "seconds": 180
             },
             {
             "poseKey": "dragon-pose-right",
-            "seconds": 2
+            "seconds": 180
             },
             {
             "poseKey": "twisted-dragon-pose-right",
-            "seconds": 2
+            "seconds": 180
             },
             {
             "poseKey": "half-cobra-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "cobra-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "lying-hero-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "seated-forward-bend",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "rotation-pose-legs-to-the-left",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "rotation-pose-legs-to-the-right",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "corpse-pose",
-            "seconds": 3
+            "seconds": 180
             }
             ]
   },
@@ -939,47 +935,47 @@
   "poses": [
             {
             "poseKey": "pigeon-pose-head-down-on-left-foot",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "pigeon-pose-head-down-on-right-foot",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "shoelace-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "lying-sideways-left",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "lying-sideways-right",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "kranich-left",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "kranich-right",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "dragonfly-against-wall",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "seated-forward-bend",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "lying-hero-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "corpse-pose",
-            "seconds": 3
+            "seconds": 180
             }
             ]
   },
@@ -989,43 +985,43 @@
   "poses": [
             {
             "poseKey": "tortoise-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
-            "poseKey": "monkey-king-pose-with-rotation-and-bend-to-left-leg",
-            "seconds": 3
+            "poseKey": "wide-angle-seated-left-bend",
+            "seconds": 180
             },
             {
-            "poseKey": "monkey-king-pose-with-rotation-and-bend-to-right-leg",
-            "seconds": 3
+            "poseKey": "wide-angle-seated-right-bend",
+            "seconds": 180
             },
             {
             "poseKey": "wide-angle-seated-forward-bend",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "happy-baby-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "seated-forward-bend",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "half-cobra-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "cobra-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "lying-hero-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "corpse-pose",
-            "seconds": 3
+            "seconds": 180
             }
             ]
   },
@@ -1034,64 +1030,64 @@
   "title": "Yin Yoga - Magen & Milz",
   "poses": [
             {
-            "poseKey": "half-saddle-left",
-            "seconds": 3
+            "poseKey": "half-lying-hero-left",
+            "seconds": 180
             },
             {
-            "poseKey": "half-saddle-right",
-            "seconds": 3
+            "poseKey": "half-lying-hero-right",
+            "seconds": 180
             },
             {
             "poseKey": "dragon-pose-left",
-            "seconds": 2
+            "seconds": 120
             },
             {
             "poseKey": "dragon-pose-right",
-            "seconds": 2
+            "seconds": 120
             },
             {
             "poseKey": "camel-pose-palms-set-against-feet",
-            "seconds": 1
+            "seconds": 60
             },
             {
             "poseKey": "lying-hero-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "bound-angle-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "thread-and-needle-pose-left",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "thread-and-needle-pose-right",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "seated-forward-bend",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "easy-supported-shoulderstand-with-tilted-legs",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "plow-pose",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "rotation-pose-legs-to-the-left",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "rotation-pose-legs-to-the-right",
-            "seconds": 3
+            "seconds": 180
             },
             {
             "poseKey": "corpse-pose",
-            "seconds": 3
+            "seconds": 180
             }
             ]
   },
@@ -1178,19 +1174,19 @@
             "seconds": 20
             },
             {
-            "poseKey": "Reclining-Big-Toe-Pose-center-left-leg",
+            "poseKey": "reclining-big-toe-pose-center-left-leg",
             "seconds": 20
             },
             {
-            "poseKey": "Reclining-Big-Toe-Pose-left",
+            "poseKey": "reclining-big-toe-pose-left",
             "seconds": 20
             },
             {
-            "poseKey": "Reclining-Big-Toe-Pose-center-right-leg",
+            "poseKey": "reclining-big-toe-pose-center-right-leg",
             "seconds": 20
             },
             {
-            "poseKey": "Reclining-Big-Toe-Pose-right",
+            "poseKey": "reclining-big-toe-pose-right",
             "seconds": 20
             },
             {
@@ -1322,7 +1318,7 @@
             "seconds": 15
             },
             {
-            "poseKey": "cycling",
+            "poseKey": "cycling-high",
             "seconds": 30
             },
             {

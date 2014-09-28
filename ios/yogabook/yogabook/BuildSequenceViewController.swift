@@ -51,8 +51,7 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         if self.yogaSequence.poses.count > 0 {
             if !self.titleTextField.text.isEmpty {
                 self.yogaSequence.title = self.titleTextField.text
-                Data.sharedInstance.mySequencesDict[yogaSequence.key] = yogaSequence
-                Data.sharedInstance.saveAll()
+                Data.sharedInstance.insertSequence(yogaSequence)
                 self.dismissViewControllerAnimated(true, completion: nil)
             } else {
                 self.titleTextField.becomeFirstResponder()
@@ -65,8 +64,7 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         if gesture.state == .Ended {
             let point: CGPoint = gesture.locationInView(self.posesCollectionView)
             if point.x >= 0 && point.y >= 0 {
-                let indexPath: NSIndexPath = self.posesCollectionView.indexPathForItemAtPoint(point)
-                if indexPath.row >= 0 {
+                if let indexPath: NSIndexPath = self.posesCollectionView.indexPathForItemAtPoint(point) {
                     let cell: PoseViewCell = self.posesCollectionView.cellForItemAtIndexPath(indexPath) as PoseViewCell
                     let poseInSequence = PoseInSequence(poseKey: cell.data.key)
                     self.yogaSequence.poses.append(poseInSequence)
@@ -102,7 +100,7 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
     }
     
     // UICollectionViewDelegate
-    func collectionView(_collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if _collectionView == self.posesCollectionView {
             return Data.sharedInstance.poses.count
@@ -113,34 +111,37 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         return 0;
     }
     
-    func collectionView(_collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
+    func collectionView(_collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        var cellID : String = ""
+        if _collectionView == self.posesCollectionView {
+            cellID = "PoseViewCellID"
+        } else if _collectionView == self.sequenceCollectionView {
+            cellID = "PoseSequenceViewCellID"
+        }
+        let cell = _collectionView.dequeueReusableCellWithReuseIdentifier(cellID, forIndexPath: indexPath) as UICollectionViewCell
         
         if _collectionView == self.posesCollectionView {
-            
-            let cell = _collectionView.dequeueReusableCellWithReuseIdentifier("PoseViewCellID", forIndexPath: indexPath) as PoseViewCell
+            let _cell = cell as PoseViewCell
             let pose = Data.sharedInstance.poses[indexPath.row]
-            cell.data = pose
-            return cell
+            _cell.data = pose
             
         } else if _collectionView == self.sequenceCollectionView {
-            
-            let cell = _collectionView.dequeueReusableCellWithReuseIdentifier("PoseSequenceViewCellID", forIndexPath: indexPath) as PoseSequenceViewCell
+            let _cell = cell as PoseSequenceViewCell
             let poseInSequence = self.yogaSequence.poses[indexPath.row]
-            cell.data = poseInSequence
-            cell.onTimeChanged = {
+            _cell.data = poseInSequence
+            _cell.onTimeChanged = {
                 [weak self] in
                 self!.updateTotalTime()
             }
-            cell.onItemRemove = {
+            _cell.onItemRemove = {
                 [weak self, weak indexPath] in
                 self!.yogaSequence.poses.removeAtIndex(indexPath!.row)
                 self!.reloadSequenceCollection()
             }
-            return cell
-            
         }
         
-        return nil
+        return cell;
         
     }
     
