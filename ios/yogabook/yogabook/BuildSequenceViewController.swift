@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class BuildSequenceViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITextFieldDelegate {
     
@@ -45,6 +46,22 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
     
     @IBAction func onDone() {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func onDelete(sender: AnyObject) {
+        
+        var alert = UIAlertController(title: "Delete this sequence?", message: "Are you sure you want to delete this sequence", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Delete", style: .Destructive, handler: { [weak self] (action) -> Void in
+            Data.sharedInstance.removeSequenceWithKey(self!.yogaSequence.key)
+            self!.dismissViewControllerAnimated(true, completion: { () -> Void in
+                self!.dismissViewControllerAnimated(true, completion: nil)
+            })
+        }))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     @IBAction func onSave() {

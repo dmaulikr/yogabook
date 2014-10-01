@@ -93,12 +93,6 @@ class MainViewController: UIViewController, LXReorderableCollectionViewDataSourc
                 self!.performSegueWithIdentifier("BuildSequenceID", sender: yogaSequence)
             }
             
-            cell.removeAction = {
-                [weak self] (yogaSequence: YogaSequence) -> () in
-                Data.sharedInstance.removeSequenceWithKey(yogaSequence.key)
-                self!.reload()
-            }
-            
         } else {
             cell.renderLast()
         }
