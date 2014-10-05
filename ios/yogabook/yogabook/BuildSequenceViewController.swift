@@ -9,13 +9,13 @@
 import UIKit
 import Foundation
 
-class BuildSequenceViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITextFieldDelegate {
+class BuildSequenceViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, LXReorderableCollectionViewDataSource, LXReorderableCollectionViewDelegateFlowLayout, UITextFieldDelegate {
     
-    @IBOutlet var posesCollectionView: UICollectionView!
-    @IBOutlet var sequenceCollectionView: UICollectionView!
-    @IBOutlet var titleTextField: UITextField!
-    @IBOutlet var totalTimeLabel: UILabel!
-    @IBOutlet var saveButton: UIButton!
+    @IBOutlet weak var posesCollectionView: UICollectionView!
+    @IBOutlet weak var sequenceCollectionView: UICollectionView!
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var totalTimeLabel: UILabel!
+    @IBOutlet weak var saveButton: UIButton!
     
     var yogaSequence: YogaSequence = YogaSequence()
     
@@ -164,7 +164,23 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
     
     func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
         
-        
+    }
+    
+    // Reordering
+    func collectionView(collectionView: UICollectionView!, itemAtIndexPath fromIndexPath: NSIndexPath!, willMoveToIndexPath toIndexPath: NSIndexPath!) {
+        if collectionView == sequenceCollectionView {
+            let poseInSequence = yogaSequence.poses[fromIndexPath.item]
+            yogaSequence.poses.removeAtIndex(fromIndexPath.item)
+            yogaSequence.poses.insert(poseInSequence, atIndex: toIndexPath.item)
+        }
+    }
+    
+    func collectionView(collectionView: UICollectionView!, itemAtIndexPath fromIndexPath: NSIndexPath!, canMoveToIndexPath toIndexPath: NSIndexPath!) -> Bool {
+        return true
+    }
+    
+    func collectionView(collectionView: UICollectionView!, canMoveItemAtIndexPath indexPath: NSIndexPath!) -> Bool {
+        return true
     }
     
     // UITextFieldDelegate

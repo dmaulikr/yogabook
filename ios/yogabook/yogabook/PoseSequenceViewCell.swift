@@ -11,11 +11,11 @@ import UIKit
 
 class PoseSequenceViewCell : UICollectionViewCell {
     
-    @IBOutlet var sanskritLabel: UILabel!
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var categoryLabel: UILabel!
-    @IBOutlet var thumbnail: UIImageView!
-    @IBOutlet var timeLabel: UILabel!
+    @IBOutlet weak var sanskritLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var thumbnail: UIImageView!
+    @IBOutlet weak var timeLabel: UILabel!
     
     var _data: PoseInSequence?
     var data: PoseInSequence {

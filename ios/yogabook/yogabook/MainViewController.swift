@@ -11,7 +11,7 @@ import AVFoundation
 
 class MainViewController: UIViewController, LXReorderableCollectionViewDataSource, LXReorderableCollectionViewDelegateFlowLayout {
     
-    @IBOutlet var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var sequences : [YogaSequence] = [YogaSequence]()
     
@@ -49,7 +49,7 @@ class MainViewController: UIViewController, LXReorderableCollectionViewDataSourc
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
-        let identifier: String = segue.identifier
+        let identifier = segue.identifier
         switch identifier {
             
         case "BuildSequenceID":
@@ -60,18 +60,17 @@ class MainViewController: UIViewController, LXReorderableCollectionViewDataSourc
                 let nsVC = segue.destinationViewController as BuildSequenceViewController
                 nsVC.yogaSequence = yogaSequence
             }
-        
+            
         case "PlaySequenceID":
             let yogaSequence = sender as YogaSequence
             let pqVC = segue.destinationViewController as PlaySequenceViewController
             pqVC.yogaSequence = yogaSequence
             
         default:
-             println("nothing")
+            println("nothing")
             
         }
         
-
         
     }
     

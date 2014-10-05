@@ -11,12 +11,12 @@ import UIKit
 
 class PlaySequenceViewController: UIViewController {
     
-    @IBOutlet var imageView: UIImageView!
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var sanskritLabel: UILabel!
-    @IBOutlet var timeLabel: UILabel!
-    @IBOutlet var playImageView: UIImageView!
-    @IBOutlet var clockImageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var sanskritLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var playImageView: UIImageView!
+    @IBOutlet weak var clockImageView: UIImageView!
     
     var yogaSequence: YogaSequence?
     var poseIndex = 0

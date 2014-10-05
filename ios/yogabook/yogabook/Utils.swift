@@ -66,7 +66,7 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
             let (name, ext) = sound.components()
             let url = NSBundle.mainBundle().URLForResource(name, withExtension: ext)!
             var error: NSError?
-            let data = NSData.dataWithContentsOfURL(url, options: NSDataReadingOptions.DataReadingMappedAlways, error: &error)
+            let data = NSData(contentsOfURL: url, options: .DataReadingMappedAlways, error: &error)
             if error == nil {
                 self.soundsDict[name] = data
             }
