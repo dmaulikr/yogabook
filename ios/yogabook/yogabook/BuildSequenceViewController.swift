@@ -84,7 +84,16 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDelegate, L
             
             
         case .ByGroup:
-            print("")
+            for pose in poses {
+                let key = pose.group.uppercaseString
+                var posesForKey = filteringPosesDict[key]
+                if posesForKey == nil {
+                    posesForKey = [Pose]()
+                }
+                posesForKey!.append(pose)
+                filteringPosesDict[key] = posesForKey
+            }
+
             
         case .ByType:
             // Category: ie. Backbends, etc
@@ -100,7 +109,7 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDelegate, L
             
         }
     
-        // keys
+        // sort keys alphabetically
         filteringSortedKeys = filteringPosesDict.keys.array
         filteringSortedKeys.sort({$0 < $1})
         

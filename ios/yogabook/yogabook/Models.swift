@@ -62,10 +62,12 @@ class Pose: NSObject, NSCoding {
     var key: String
     var sanskrit: String
     var category: String
+    var group : String
     
     init(raw: NSDictionary) {
-        self.key = raw["key"] as String
-        self.category = raw["category"] as String
+        key = raw["key"] as String
+        category = raw["category"] as String
+        group = raw["group"] as String
         if let sanskrit = raw["sanskrit"] as? String {
             self.sanskrit = sanskrit
         } else {
@@ -74,10 +76,12 @@ class Pose: NSObject, NSCoding {
         
         // Debugging
         // Check if image exists
-//        let img_th = UIImage(named:self.key+"_th")
-//        if img_th.size.width == 0 || img_th.size.height == 0 {
+//        if let let img_th = UIImage(named:self.key+"_th") {
+//
+//        } else {
 //            println("missing image for pose key \(self.key)")
 //        }
+        
         
     }
     
@@ -85,12 +89,14 @@ class Pose: NSObject, NSCoding {
         self.key = aDecoder.decodeObjectForKey("key") as String
         self.sanskrit = aDecoder.decodeObjectForKey("sanskrit") as String
         self.category = aDecoder.decodeObjectForKey("category") as String
+        self.group = aDecoder.decodeObjectForKey("group") as String
     }
     
     func encodeWithCoder(aCoder: NSCoder) {
         aCoder.encodeObject(self.key, forKey: "key")
         aCoder.encodeObject(self.sanskrit, forKey: "sanskrit")
         aCoder.encodeObject(self.category, forKey: "category")
+        aCoder.encodeObject(self.group, forKey: "group")
     }
     
     // Helpers
