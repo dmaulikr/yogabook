@@ -9,15 +9,25 @@
 import UIKit
 import Foundation
 
-class BuildSequenceViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, LXReorderableCollectionViewDataSource, LXReorderableCollectionViewDelegateFlowLayout, UITextFieldDelegate {
+class BuildSequenceViewController: UIViewController, UICollectionViewDelegate, LXReorderableCollectionViewDataSource, LXReorderableCollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var posesCollectionView: UICollectionView!
     @IBOutlet weak var sequenceCollectionView: UICollectionView!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var totalTimeLabel: UILabel!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var filteringControl: UISegmentedControl!
     
     var yogaSequence: YogaSequence = YogaSequence()
+    
+    var filteringSortedKeys : [String] = [String]()
+    var filteringPosesDict : Dictionary<String, [Pose]> = Dictionary<String, [Pose]>()
+    
+    enum FilteringType : Int {
+        case Alphabetic, ByType, ByGroup
+    }
+    
+    var currentFilteringType: FilteringType = .Alphabetic
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +42,67 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         if !self.yogaSequence.title.isEmpty {
             self.titleTextField.text = self.yogaSequence.title
         }
+        
         updateUI()
+        applyCurrentFilter()
+        
+    }
+    
+    func applyCurrentFilter() {
+        
+        // init values
+        filteringPosesDict = Dictionary<String, [Pose]>()
+        let poses = Data.sharedInstance.poses
+        
+        // filtering
+        switch currentFilteringType {
+        case .Alphabetic:
+            for pose in poses {
+                let key = pose.key.substringToIndex(advance(pose.key.startIndex, 1)).uppercaseString
+                var posesForKey = filteringPosesDict[key]
+                if posesForKey == nil {
+                    posesForKey = [Pose]()
+                }
+                posesForKey!.append(pose)
+                filteringPosesDict[key] = posesForKey
+            }
+            
+            
+            
+//            var c = 0
+//            for key in filteringPosesDict.keys.array {
+//                if let poses = filteringPosesDict[key] {
+//                    c += poses.count
+//                    println("Key: \(key) -> \(poses.count) poses")
+//                } else {
+//                    println("Key: \(key) -> 0 poses")
+//                }
+//                
+//            }
+//            
+//            println("total \(c) poses vs \(Data.sharedInstance.poses.count) real")
+            
+            
+        case .ByGroup:
+            print("")
+            
+        case .ByType:
+            // Category: ie. Backbends, etc
+            for pose in poses {
+                let key = pose.category.uppercaseString
+                var posesForKey = filteringPosesDict[key]
+                if posesForKey == nil {
+                    posesForKey = [Pose]()
+                }
+                posesForKey!.append(pose)
+                filteringPosesDict[key] = posesForKey
+            }
+            
+        }
+    
+        // keys
+        filteringSortedKeys = filteringPosesDict.keys.array
+        filteringSortedKeys.sort({$0 < $1})
         
     }
     
@@ -77,6 +147,18 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         }
     }
     
+    @IBAction func onFilteringTypeChanged(sender: AnyObject) {
+        
+        if let currentFilteringType = FilteringType(rawValue: filteringControl.selectedSegmentIndex) {
+            self.currentFilteringType = currentFilteringType
+            applyCurrentFilter()
+            posesCollectionView.reloadData()
+        }
+        
+        
+        
+    }
+
     func processDoubleTap(gesture: UITapGestureRecognizer) {
         if gesture.state == .Ended {
             let point: CGPoint = gesture.locationInView(self.posesCollectionView)
@@ -85,21 +167,13 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
                     let cell: PoseViewCell = self.posesCollectionView.cellForItemAtIndexPath(indexPath) as PoseViewCell
                     let poseInSequence = PoseInSequence(poseKey: cell.data.key)
                     self.yogaSequence.poses.append(poseInSequence)
-                    reloadSequenceCollection()
+                    let insertionIndexPath = NSIndexPath(forItem: self.yogaSequence.poses.count-1, inSection: 0)
+                    self.sequenceCollectionView.insertItemsAtIndexPaths([insertionIndexPath])
+                    self.sequenceCollectionView.scrollToItemAtIndexPath(insertionIndexPath, atScrollPosition: .Bottom, animated: true)
+                    updateUI()
                 }
             }
         }
-    }
-    
-    func reloadSequenceCollection() {
-        self.sequenceCollectionView.reloadData()
-        let cellW: CGFloat = 300.0
-        let cellS: CGFloat = 10.0
-        let w = self.view.frame.size.width
-        var xOffset: CGFloat = CGFloat(self.yogaSequence.poses.count) * ( cellW + cellS ) + cellS
-        xOffset = xOffset > w ? xOffset - w : 0.0
-        self.sequenceCollectionView.setContentOffset(CGPointMake(xOffset, 0), animated: true)
-        updateUI()
     }
     
     func updateUI() {
@@ -109,6 +183,7 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         } else {
             self.saveButton.enabled = false
         }
+        filteringControl.selectedSegmentIndex = currentFilteringType.rawValue
     }
     
     func updateTotalTime() {
@@ -116,34 +191,51 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         self.totalTimeLabel.text = String(format: "%.2d m %.2d s", minutes, seconds)
     }
     
-    // UICollectionViewDelegate
-    func collectionView(_collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        if _collectionView == self.posesCollectionView {
-            return Data.sharedInstance.poses.count
-        } else if _collectionView == self.sequenceCollectionView {
+
+}
+
+extension BuildSequenceViewController : UICollectionViewDataSource {
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        if collectionView == posesCollectionView {
+            return filteringSortedKeys.count
+        }
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.posesCollectionView {
+            let groupKey = filteringSortedKeys[section]
+            if let poses = filteringPosesDict[groupKey] {
+                return poses.count
+            }
+        } else if collectionView == self.sequenceCollectionView {
             return self.yogaSequence.poses.count
         }
         
         return 0;
     }
     
-    func collectionView(_collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         var cellID : String = ""
-        if _collectionView == self.posesCollectionView {
+        if collectionView == self.posesCollectionView {
             cellID = "PoseViewCellID"
-        } else if _collectionView == self.sequenceCollectionView {
+        } else if collectionView == self.sequenceCollectionView {
             cellID = "PoseSequenceViewCellID"
         }
-        let cell = _collectionView.dequeueReusableCellWithReuseIdentifier(cellID, forIndexPath: indexPath) as UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellID, forIndexPath: indexPath) as UICollectionViewCell
         
-        if _collectionView == self.posesCollectionView {
-            let _cell = cell as PoseViewCell
-            let pose = Data.sharedInstance.poses[indexPath.row]
-            _cell.data = pose
+        if collectionView == self.posesCollectionView { // Right Column Collection
             
-        } else if _collectionView == self.sequenceCollectionView {
+            let _cell = cell as PoseViewCell
+            let groupKey = filteringSortedKeys[indexPath.section]
+            if let poses = filteringPosesDict[groupKey] {
+                _cell.data = poses[indexPath.row]
+            }
+            
+            
+        } else if collectionView == self.sequenceCollectionView { // Main Collection
             let _cell = cell as PoseSequenceViewCell
             let poseInSequence = self.yogaSequence.poses[indexPath.row]
             _cell.data = poseInSequence
@@ -152,15 +244,32 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
                 self!.updateTotalTime()
             }
             _cell.onItemRemove = {
-                [weak self, weak indexPath] in
-                self!.yogaSequence.poses.removeAtIndex(indexPath!.row)
-                self!.reloadSequenceCollection()
+                [weak self, weak _cell] in
+                if let ipath = self!.sequenceCollectionView.indexPathForCell(_cell!) {
+                    self!.yogaSequence.poses.removeAtIndex(indexPath.row)
+                    self!.sequenceCollectionView.deleteItemsAtIndexPaths([ipath])
+                    self!.updateUI()
+                }
             }
         }
         
         return cell;
-        
+
     }
+    
+ 
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        
+        var header = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "PosesCollectionHeaderID", forIndexPath: indexPath) as PosesCollectionSectionHeader
+        
+        header.titleLabel.text = filteringSortedKeys[indexPath.section]
+        
+        return header
+    }
+
+}
+
+extension BuildSequenceViewController : UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
         
@@ -183,7 +292,11 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
         return true
     }
     
-    // UITextFieldDelegate
+
+}
+
+extension BuildSequenceViewController : UITextFieldDelegate {
+    
     func textFieldShouldReturn(textField: UITextField!) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -196,6 +309,7 @@ class BuildSequenceViewController: UIViewController, UICollectionViewDataSource,
     func textFieldShouldEndEditing(textField: UITextField!) -> Bool {
         return true
     }
+    
 }
 
 

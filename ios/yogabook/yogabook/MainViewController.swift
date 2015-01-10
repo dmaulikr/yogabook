@@ -49,26 +49,28 @@ class MainViewController: UIViewController, LXReorderableCollectionViewDataSourc
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
-        let identifier = segue.identifier
-        switch identifier {
-            
-        case "BuildSequenceID":
-            
-            if sender != nil {
-                // Editing
+        if let identifier = segue.identifier {
+            switch identifier {
+                
+            case "BuildSequenceID":
+                
+                if sender != nil {
+                    // Editing
+                    let yogaSequence = sender as YogaSequence
+                    let nsVC = segue.destinationViewController as BuildSequenceViewController
+                    nsVC.yogaSequence = yogaSequence
+                }
+                
+            case "PlaySequenceID":
                 let yogaSequence = sender as YogaSequence
-                let nsVC = segue.destinationViewController as BuildSequenceViewController
-                nsVC.yogaSequence = yogaSequence
+                let pqVC = segue.destinationViewController as PlaySequenceViewController
+                pqVC.yogaSequence = yogaSequence
+                
+            default:
+                println("nothing")
+                
             }
-            
-        case "PlaySequenceID":
-            let yogaSequence = sender as YogaSequence
-            let pqVC = segue.destinationViewController as PlaySequenceViewController
-            pqVC.yogaSequence = yogaSequence
-            
-        default:
-            println("nothing")
-            
+
         }
         
         

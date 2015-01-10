@@ -36,9 +36,8 @@ class Data {
         
         // poses
         if let posesURL = NSBundle.mainBundle().URLForResource("poses", withExtension: "json") {
-            var error: NSError?
-            let posesData = NSData(contentsOfURL: posesURL, options: nil, error: &error)
-            if error == nil {
+            if let posesData = NSData(contentsOfURL: posesURL) {
+                var error: NSError?
                 let posesJSON: [NSDictionary] = NSJSONSerialization.JSONObjectWithData(posesData, options: nil, error: &error) as [NSDictionary]
                 if error == nil {
                     for poseRaw in posesJSON {
@@ -51,19 +50,15 @@ class Data {
         }
         
         // mySequences
-        var _mySequencesDict: Dictionary<String, YogaSequence>
-        var _unarchivedMySeqs: AnyObject? = Data.unarchiveObjectForKey(MySequencesKey)
-        if _unarchivedMySeqs == nil {
-            _mySequencesDict = Dictionary<String, YogaSequence>()
-        } else {
-            _mySequencesDict = _unarchivedMySeqs as Dictionary<String, YogaSequence>
+        var _mySequencesDict = Dictionary<String, YogaSequence>()
+        if let _unarchivedMySeqs = Data.unarchiveObjectForKey(MySequencesKey) as? Dictionary<String, YogaSequence> {
+            _mySequencesDict = _unarchivedMySeqs
         }
         
         // sequences
         if let sequenceURL = NSBundle.mainBundle().URLForResource("sequences", withExtension: "json") {
-            var error: NSError?
-            let sequencesData = NSData(contentsOfURL: sequenceURL, options: nil, error: &error)
-            if error == nil {
+            if let sequencesData = NSData(contentsOfURL: sequenceURL) {
+                var error: NSError?
                 let sequencesJSON: [NSDictionary] = NSJSONSerialization.JSONObjectWithData(sequencesData, options: nil, error: &error) as [NSDictionary]
                 if error == nil {
                     for rawSeq in sequencesJSON {
@@ -108,7 +103,7 @@ class Data {
                         }
                     }
                 }
-
+            
             }
         }
         
@@ -116,11 +111,11 @@ class Data {
         // Assigning values
         self.poses = _poses
         self.posesDict = _posesDict
-        self.mySequencesDict = _mySequencesDict as Dictionary<String, YogaSequence>
+        self.mySequencesDict = _mySequencesDict
         updateAll()
         saveAll()
         
-        // Debugging
+//        // Debugging
 //        let y = YogaSequence()
 //        y.title = "HELLOW WORLD"
 //        insertSequence(y)
@@ -129,18 +124,21 @@ class Data {
     
     func updateAll() {
         let sequencesUnordered = Array(self.mySequencesDict.values) as [YogaSequence]
-        mySequences = sequencesUnordered.sorted({$0.sortingIndex < $1.sortingIndex})
+        self.mySequences = sequencesUnordered.sorted({$0.sortingIndex < $1.sortingIndex})
     }
     
     func insertSequence(yogaSequence: YogaSequence) {
-        mySequencesDict[yogaSequence.key] = yogaSequence
+        var dict = self.mySequencesDict
+        dict.updateValue(yogaSequence, forKey: yogaSequence.key)
+        self.mySequencesDict = dict
         updateAll()
         saveAll()
     }
     
     func removeSequenceWithKey(sequenceKey: String) {
-        println(mySequencesDict.count)
-        mySequencesDict.removeValueForKey(sequenceKey)
+        var dict = self.mySequencesDict
+        dict.removeValueForKey(sequenceKey)
+        self.mySequencesDict = dict
         updateAll()
         saveAll()
     }
@@ -150,14 +148,12 @@ class Data {
     }
     
     // Static (or Type) Methods
-    class func unarchiveObjectForKey(key: String) -> AnyObject! {
+    class func unarchiveObjectForKey(key: String) -> AnyObject? {
         let documentsPath: String = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask,true)[0] as String
         let file = documentsPath.stringByAppendingPathComponent(key)
         var anObject: AnyObject?
         if NSFileManager.defaultManager().fileExistsAtPath(file) {
-            var error: NSError?
-            let data = NSData(contentsOfFile: file, options: nil, error: &error)
-            if error == nil {
+            if let data = NSData(contentsOfFile: file) {
                 let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
                 anObject = unarchiver.decodeObjectForKey(key)
                 unarchiver.finishDecoding()

@@ -28,6 +28,7 @@
 		BF88A1BA198D105500A13823 /* PoseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88A1B9198D105500A13823 /* PoseViewCell.swift */; };
 		BF88A1BC198DD30600A13823 /* PoseSequenceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF88A1BB198DD30600A13823 /* PoseSequenceViewCell.swift */; };
 		BFB9B596199F12CC00C160AE /* sequences.json in Resources */ = {isa = PBXBuildFile; fileRef = BFB9B595199F12CC00C160AE /* sequences.json */; };
+		BFE0B7E719F3697A0087C97D /* PosesCollectionSectionHader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0B7E619F3697A0087C97D /* PosesCollectionSectionHader.swift */; };
 		C594A6357C6545898388E503 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DB49620D0B4894BA10B971 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		BFAA1A6019A8614E00102E9A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		BFAA1A6219A8616000102E9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BFB9B595199F12CC00C160AE /* sequences.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sequences.json; sourceTree = "<group>"; };
+		BFE0B7E619F3697A0087C97D /* PosesCollectionSectionHader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PosesCollectionSectionHader.swift; sourceTree = "<group>"; };
 		D2DB49620D0B4894BA10B971 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 				BF858DB9197A6D83002CEBB0 /* YogaSequenceViewCell.swift */,
 				BF88A1B9198D105500A13823 /* PoseViewCell.swift */,
 				BF88A1BB198DD30600A13823 /* PoseSequenceViewCell.swift */,
+				BFE0B7E619F3697A0087C97D /* PosesCollectionSectionHader.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				BF0ED23619972FD10065F633 /* Utils.swift in Sources */,
 				BF88A1BC198DD30600A13823 /* PoseSequenceViewCell.swift in Sources */,
 				BF88A1BA198D105500A13823 /* PoseViewCell.swift in Sources */,
+				BFE0B7E719F3697A0087C97D /* PosesCollectionSectionHader.swift in Sources */,
 				BF631D04197E8E6300AB6D17 /* BuildSequenceViewController.swift in Sources */,
 				BF858DBC197A7533002CEBB0 /* Models.swift in Sources */,
 			);
